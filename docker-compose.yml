@@ -1,7 +1,9 @@
 version: '3.7'
 services:
-  news:
-    build: docker/dev
+  sleekpigeons:
+    build:
+      context: .
+      target: dev
     ports:
       - "80:80"
     volumes:
