@@ -9,12 +9,13 @@
   --border-radius: 0.3em;
   --font-headings: 'Lato', sans-serif;
 }
-.article-list {
+#article-list > ul {
   padding: 1rem;
   margin: 0px;
 }
 .article {
   list-style: none;
+  word-break: break-word;
 }
 .article > a{
   display: flex;

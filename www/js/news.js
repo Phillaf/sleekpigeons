@@ -22,11 +22,11 @@
     articles.forEach(article => {
       html += createArticle(article);
     });
-    return `<ul class="article-list">${html}</ul>`;
+    return `<ul>${html}</ul>`;
   }
 
   getNews().then(html => {
-    document.getElementById("news-list").innerHTML = html;
+    document.getElementById("article-list").innerHTML = html;
   });
 
 })();
