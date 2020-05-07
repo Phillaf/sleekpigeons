@@ -16,7 +16,7 @@ server {
         if ($is_args) {
             set $delimiter "&";
         }
-        set $args $args${delimiter}token=${API_KEY};
+        set $args $args${delimiter}token=${FINNHUB_KEY};
 
         proxy_pass https://finnhub.io/api/$1$is_args$args;
         proxy_cache_use_stale error timeout http_500 http_502 http_503 http_504;

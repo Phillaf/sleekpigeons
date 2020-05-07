@@ -10,4 +10,4 @@ services:
       - ./conf.d:/etc/nginx/conf.d
       - ./www:/www
     environment:
-      - API_KEY
+      - FINNHUB_KEY
