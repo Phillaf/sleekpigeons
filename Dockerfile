@@ -12,5 +12,5 @@ FROM base AS dev
 # Build
 FROM base as build
 
-COPY ./conf.d /etc/nginx/conf.d
+COPY ./nginx /nginx
 COPY ./www /www

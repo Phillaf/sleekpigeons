@@ -7,7 +7,8 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./conf.d:/etc/nginx/conf.d
+      - ./nginx:/nginx
       - ./www:/www
+      - ./logs:/var/log/nginx
     environment:
       - FINNHUB_KEY

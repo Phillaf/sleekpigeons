@@ -1,2 +1,2 @@
 .env
-conf.d/default.conf
+logs/

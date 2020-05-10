@@ -2,6 +2,7 @@
 
 set -eu
 
-envsubst '${FINNHUB_KEY}' < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf
+cp /nginx/nginx.conf /etc/nginx/nginx.conf
+envsubst '${FINNHUB_KEY}' < /nginx/default.conf > /etc/nginx/conf.d/default.conf
 
 exec "$@"
