@@ -1,0 +1,56 @@
+# we stick with nginx var names here and prefix the exported metric with nginx_ by using "as"
+# "by" allows us to specify our labelling/grouping
+counter request_count          by nginx_host, nginx_port, nginx_method, nginx_uri, nginx_content_type, nginx_status as "nginx_request_count"
+counter request_length_bytes   by nginx_host, nginx_port, nginx_method, nginx_uri, nginx_content_type, nginx_status as "nginx_request_length_bytes"
+counter bytes_sent             by nginx_host, nginx_port, nginx_method, nginx_uri, nginx_content_type, nginx_status as "nginx_bytes_sent"
+counter body_bytes_sent        by nginx_host, nginx_port, nginx_method, nginx_uri, nginx_content_type, nginx_status as "nginx_body_bytes_sent"
+counter request_time           by nginx_host, nginx_port, nginx_method, nginx_uri, nginx_content_type, nginx_status as "nginx_request_time"
+counter upstream_connect_time  by nginx_host, nginx_port, nginx_method, nginx_uri, nginx_content_type, nginx_status as "nginx_upstream_connect_time"
+counter upstream_header_time   by nginx_host, nginx_port, nginx_method, nginx_uri, nginx_content_type, nginx_status as "nginx_upstream_header_time"
+counter upstream_response_time by nginx_host, nginx_port, nginx_method, nginx_uri, nginx_content_type, nginx_status as "nginx_upstream_response_time"
+counter nginx_log_nomatch_count
+
+# the following pattern matches exactly the tab-separated fields in our custom access_log format
+# if you want to customize...this pattern should be updated to match changes you make in the nginx log format.
+/^/ +
+/(?P<msec>\d+)\.\d+\t/ +       # settime() needs just the seconds so we exclude the .milliseconds part
+/(?P<host>\S+)\t/ +
+/(?P<server_port>\S+)\t/ +
+/(?P<request_method>\S+)\t/ +
+/(?P<uri>\S+)\t/ +
+/(?P<content_type>\S+)\t/ +
+/(?P<status>\S+)\t/ +
+/(?P<request_length>\d+)\t/ +
+/(?P<bytes_sent>\d+)\t/ +
+/(?P<body_bytes_sent>\d+)\t/ +
+/(?P<request_time>\d+\.\d+)\t/ +
+/(?P<upstream_connect_time>\S+)\t/ +
+/(?P<upstream_header_time>\S+)\t/ +
+/(?P<upstream_response_time>\S+)/ +
+/$/ {
+    request_count[$host][$server_port][$request_method][$uri][$content_type][$status]++
+    request_length_bytes[$host][$server_port][$request_method][$uri][$content_type][$status] += $request_length
+    bytes_sent[$host][$server_port][$request_method][$uri][$content_type][$status] += $bytes_sent
+    body_bytes_sent[$host][$server_port][$request_method][$uri][$content_type][$status] += $body_bytes_sent
+    request_time[$host][$server_port][$request_method][$uri][$content_type][$status] += $request_time
+
+    # mtail is happier doing counters with floats/ints.
+    # nginx logs '-' when there isn't a value which
+    # we check for - and skip updating these counters if found.
+    # otherwise we cast the string to a float and increment the counter.
+    $upstream_connect_time != "-" {
+        upstream_connect_time[$host][$server_port][$request_method][$uri][$content_type][$status] += float($upstream_connect_time)
+    }
+    $upstream_header_time != "-" {
+        upstream_header_time[$host][$server_port][$request_method][$uri][$content_type][$status] += float($upstream_header_time)
+    }
+    $upstream_response_time != "-" {
+        upstream_response_time[$host][$server_port][$request_method][$uri][$content_type][$status] += float($upstream_response_time)
+    }
+} else {
+    # our pattern doesn't match.
+    # in this example since we have a single program with a single log file...it should always match
+    # or we have a bug.
+    # can use this metric to detect when our parser is failing.
+    nginx_log_nomatch_count++
+}

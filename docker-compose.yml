@@ -3,12 +3,14 @@ services:
   sleekpigeons:
     build:
       context: .
-      target: dev
+      target: base
     ports:
       - "80:80"
+      - "3903:3903"
+      - "9090:9090"
     volumes:
       - ./nginx:/nginx
       - ./www:/www
-      - ./logs:/var/log/nginx
+      - ./mtail:/etc/mtail
     environment:
       - FINNHUB_KEY
