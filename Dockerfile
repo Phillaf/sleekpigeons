@@ -10,7 +10,7 @@ COPY ./.docker/docker-entrypoint.sh /
 COPY ./.docker/startup.sh /
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
-CMD ["/startup.sh"]
+CMD ["nginx", "-g", "daemon off;"]
 
 # Build
 FROM base as build
@@ -18,3 +18,5 @@ FROM base as build
 COPY ./nginx /nginx
 COPY ./www /www
 COPY ./mtail /etc/mtail
+
+CMD ["/startup.sh"]

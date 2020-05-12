@@ -1,0 +1,70 @@
+:root {
+  --highlight-color: #FF7E67;
+  --background-color: #FFFFFF;
+  --hover-background-color: #EEEEEE;
+  --light-color: #42B883;
+  --medium-color: #347474;
+  --dark-color: #513B56;
+
+  --border-radius: 0.3em;
+  --font-headings: 'Lato', sans-serif;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "navbar navbar navbar"
+    ". news ."
+  ;
+}
+
+nav {
+  grid-area: navbar;
+  background-color: var(--dark-color);
+  height: 3em;
+
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". menu ."
+  ;
+}
+
+nav > ul {
+  grid-area: menu;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+nav li {
+  color: var(--background-color);
+  flex: 1;
+  font-family: var(--font-headings);
+}
+nav li:first-child {
+  font-weight: bold;
+  font-size: 2em;
+}
+nav li:last-child {
+  text-align: right;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--background-color);
+}
+
+nav a:hover {
+  background-color: var(--hover-background-color);
+}
+
+sleek-news {
+  grid-area: news;
+}
