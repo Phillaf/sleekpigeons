@@ -45,7 +45,7 @@
   style.innerHTML = `
     <style>
       ul {
-        padding: 1rem;
+        padding: 0;
         margin: 0px;
       }
       .article {
@@ -64,17 +64,20 @@
       .thumbnail {
         padding: 10px;
         overflow: hidden;
-        flex: 1 1 300px;
-        max-height: 350px;
+        flex: 1 1 200px;
+        height: 200px;
         object-fit: cover;
       }
       .details {
         padding: 10px;
-        flex: 2 2 600px;
+        flex: 10 1 300px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+      }
+      p {
+        margin: 0;
       }
       .category {
         background-color: var(--light-color);
@@ -87,13 +90,13 @@
       .headline {
         flex-basis: 100%;
         position: relative;
-        background: var(--dark-color);
+        background: var(--medium-color);
         color: var(--background-color);
         line-height: 2;
         padding: 0.2em 1em;
         border-radius: var(--border-radius);
-
         font-family: var(--font-headings);
+        margin: 0;
       }
       .summary {
         flex-basis: 100%;

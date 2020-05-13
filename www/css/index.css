@@ -37,7 +37,7 @@ nav > ul {
   grid-area: menu;
   list-style: none;
   margin: 0px;
-  padding: 0px;
+  padding: 0 10px;
   display: flex;
   height: 100%;
   align-items: center;
