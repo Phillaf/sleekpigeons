@@ -9,7 +9,6 @@
   --border-radius: 0.3em;
   --font-headings: 'Lato', sans-serif;
 }
-
 body {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
@@ -19,7 +18,6 @@ body {
     ". news ."
   ;
 }
-
 sleek-nav {
   grid-area: navbar;
 }
