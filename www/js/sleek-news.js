@@ -46,19 +46,19 @@
     <style>
       ul {
         padding: 0;
-        margin: 0px;
+        margin: 0;
       }
       .article {
         list-style: none;
         word-break: break-word;
       }
-      .article > a{
+      a{
         display: flex;
         flex-wrap: wrap;
         text-decoration: none;
         color: var(--dark-colof);
       }
-      .article > a:hover {
+      a:hover {
         background-color: var(--hover-background-color);
       }
       .thumbnail {
