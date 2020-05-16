@@ -27,8 +27,8 @@
     createExchange = (exchange) => (
       `<a href="http://sleekpigeons.com/exchange/${exchange.code}">
          <li class="exchange">
-           <h3>${exchange.code}</h3>
-           <p>${exchange.name}</p>
+           <p class="exchange-code">${exchange.code}</p>
+           <p class="exchange-name">${exchange.name.toLowerCase()}</p>
          </li>
        </a>`
     );
@@ -44,33 +44,48 @@
       }
       ul {
         display: grid;
-        grid-gap: 1em;
-        grid-template-columns: repeat(auto-fill, 10em);
-        justify-content: center;
+        grid-gap: 0.3em;
+        grid-template-columns: repeat(auto-fill, 20em);
       }
       li {
-        padding: 0.5em;
+        display: flex;
+        height:100%;
+        align-items: stretch;
+        align-self: center;
+        justify-content-center;
       }
       .exchange {
         list-style: none;
-        word-break: break-word;
       }
       a {
         text-decoration: none;
         color: var(--dark-colof);
-        border: 1px solid var(--light-color);
+        border: 2px solid var(--medium-color);
         border-radius: var(--border-radius);
-        text-align: center;
+        background-color: var(--medium-color);
       }
       a:hover {
-        background-color: var(--hover-background-color);
+        background-color: var(--light-color);
+        border: 2px solid var(--light-color);
       }
-      h3 {
+      .exchange-code {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1 1 10%;
+        background-color: var(--background-color);
         color: var(--medium-color);
+        font-weight: bold;
       }
-      p {
+      .exchange-name {
+        display: flex;
+        align-items: center;
+        padding: 0 1em;
+        flex: 1 1 90%;
         font-size: 0.8em;
-        margin-top: 0.8em;
+        color: var(--background-color);
+        overflow: hidden;
+        white-space: nowrap;
       }
     </style>`;
 
