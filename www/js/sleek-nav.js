@@ -13,8 +13,9 @@
   const nav = document.createElement('template');
   nav.innerHTML = `
     <nav>
+      <a id="logo" href="/">sleekpigeons</a></li>
       <ul id="navbar">
-        <li><a href="/">sleekpigeons</a></li>
+        <li><a href="/logs">logs</a></li>
         <li><a href="http://status.sleekpigeons.com/d/xdlNPjXmk/nginx">status</a></li>
       </ul>
     </nav>`;
@@ -23,43 +24,40 @@
   style.innerHTML = `
     <style>
       nav {
-        grid-area: navbar;
         background-color: var(--dark-color);
         height: 3em;
-        display: grid;
-        grid-template-columns: 1fr 5fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-          ". menu ."
-        ;
-      }
-      nav > ul {
-        grid-area: menu;
-        list-style: none;
-        margin: 0px;
-        padding: 0 10px;
         display: flex;
-        height: 100%;
-        align-items: center;
       }
-      nav li {
-        color: var(--background-color);
-        flex: 1;
-        font-family: var(--font-headings);
-      }
-      nav li:first-child {
+      #logo {
         font-weight: bold;
         font-size: 2em;
-      }
-      nav li:last-child {
-        text-align: right;
-      }
-      nav a {
+        font-family: var(--font-headings);
         text-decoration: none;
         color: var(--background-color);
+        flex: 1;
       }
-      nav a:hover {
-        background-color: var(--shade-light-color);
+      ul {
+        list-style: none;
+        margin: 0px;
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+      }
+      li {
+        color: var(--background-color);
+        font-family: var(--font-headings);
+        flex: auto;
+        display: flex;
+      }
+      li > a {
+        text-decoration: none;
+        color: var(--background-color);
+        flex: 1;
+        text-align: center;
+        line-height: 3em;
+      }
+      a:hover {
+        background-color: var(--medium-color);
       }
     </style>`;
 

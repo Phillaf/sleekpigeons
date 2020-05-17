@@ -45,7 +45,7 @@
       ul {
         display: grid;
         grid-gap: 0.3em;
-        grid-template-columns: repeat(auto-fill, 20em);
+        grid-template-columns: repeat(auto-fill, minmax(20em, auto));
       }
       li {
         display: flex;
