@@ -59,7 +59,7 @@
         color: var(--background-color);
       }
       nav a:hover {
-        background-color: var(--hover-background-color);
+        background-color: var(--shade-light-color);
       }
     </style>`;
 

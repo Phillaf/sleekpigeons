@@ -59,7 +59,7 @@
         color: var(--dark-colof);
       }
       a:hover {
-        background-color: var(--hover-background-color);
+        background-color: var(--shade-light-color);
       }
       .thumbnail {
         padding: 10px;
@@ -100,6 +100,8 @@
       }
       .summary {
         flex-basis: 100%;
+        max-height: 10em;
+        overflow: hidden;
       }
       </style>`;
 

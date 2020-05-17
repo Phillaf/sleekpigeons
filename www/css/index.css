@@ -1,21 +1,10 @@
-:root {
-  --highlight-color: #FF7E67;
-  --background-color: #FFFFFF;
-  --hover-background-color: #EEEEEE;
-  --light-color: #42B883;
-  --medium-color: #347474;
-  --dark-color: #513B56;
-
-  --border-radius: 0.3em;
-  --font-headings: 'Lato', sans-serif;
-}
 body {
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-columns: repeat(7, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
-    "navbar navbar navbar"
-    ". news ."
+    "navbar navbar navbar navbar navbar navbar navbar"
+    ". news news news news exchanges ."
   ;
 }
 sleek-nav {
@@ -23,4 +12,7 @@ sleek-nav {
 }
 sleek-news {
   grid-area: news;
+}
+sleek-exchanges {
+  grid-area: exchanges;
 }

@@ -25,7 +25,7 @@
     }
 
     createExchange = (exchange) => (
-      `<a href="http://sleekpigeons.com/exchange/${exchange.code}">
+      `<a href="#">
          <li class="exchange">
            <p class="exchange-code">${exchange.code}</p>
            <p class="exchange-name">${exchange.name.toLowerCase()}</p>
@@ -49,10 +49,7 @@
       }
       li {
         display: flex;
-        height:100%;
         align-items: stretch;
-        align-self: center;
-        justify-content-center;
       }
       .exchange {
         list-style: none;
@@ -60,13 +57,12 @@
       a {
         text-decoration: none;
         color: var(--dark-colof);
-        border: 2px solid var(--medium-color);
+        border: 1px solid var(--shade-light-color);
         border-radius: var(--border-radius);
-        background-color: var(--medium-color);
+        background-color: var(--shade-light-color);
       }
       a:hover {
-        background-color: var(--light-color);
-        border: 2px solid var(--light-color);
+        background-color: var(--shade-medium-color);
       }
       .exchange-code {
         display: flex;
@@ -74,16 +70,15 @@
         justify-content: center;
         flex: 1 1 10%;
         background-color: var(--background-color);
-        color: var(--medium-color);
+        color: var(--shade-medium-color);
         font-weight: bold;
       }
       .exchange-name {
         display: flex;
         align-items: center;
-        padding: 0 1em;
         flex: 1 1 90%;
+        padding: 0 1em;
         font-size: 0.8em;
-        color: var(--background-color);
         overflow: hidden;
         white-space: nowrap;
       }
