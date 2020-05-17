@@ -1,0 +1,16 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "navbar navbar navbar navbar navbar navbar navbar"
+    ". stocks stocks stocks stocks stocks ."
+  ;
+}
+sleek-nav {
+  grid-area: navbar;
+}
+sleek-stocks {
+  grid-area: stocks;
+}
+

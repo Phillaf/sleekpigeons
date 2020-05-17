@@ -1,34 +1,36 @@
 (function(){
 'use strict';
 
-  class SleekExchanges extends HTMLElement {
+  class SleekStocks extends HTMLElement {
 
     constructor() {
       super();
       const shadow = this.attachShadow({ mode: 'open' });
-      const exchanges = document.createElement('ul');
-      this.getExchanges().then(html => {
-        exchanges.innerHTML = html;
-        shadow.appendChild(exchanges);
+      const stocks = document.createElement('ul');
+
+      this.getStocks().then(html => {
+        stocks.innerHTML = html;
+        shadow.appendChild(stocks);
       });
       shadow.appendChild(style.content.cloneNode(true));
     };
 
-    getExchanges = async () => {
-      const response = await fetch('/api/v1/stock/exchange');
-      const exchanges = await response.json();
+    getStocks = async () => {
+      const exchange = new URL(window.location.href).pathname.substring(8);
+      const response = await fetch(`/api/v1/stock/symbol?exchange=${exchange}`);
+      const stocks = await response.json();
       let html = "";
-      exchanges.forEach(exchange => {
-        html += this.createExchange(exchange);
+      stocks.forEach(stock => {
+        html += this.createStock(stock);
       });
       return html;
     }
 
-    createExchange = (exchange) => (
-      `<a href="/stocks/${exchange.code}">
-         <li class="exchange">
-           <p class="exchange-code">${exchange.code}</p>
-           <p class="exchange-name">${exchange.name.toLowerCase()}</p>
+    createStock = (stock) => (
+      `<a href="#">
+         <li class="stock">
+           <p class="stock-display-symbol">${stock.displaySymbol}</p>
+           <p class="stock-description">${stock.description}</p>
          </li>
        </a>`
     );
@@ -51,7 +53,7 @@
         display: flex;
         align-items: stretch;
       }
-      .exchange {
+      .stock {
         list-style: none;
       }
       a {
@@ -65,20 +67,20 @@
         background-color: var(--shade-medium-color);
         border: 1px solid var(--shade-medium-color);
       }
-      .exchange-code {
+      .stock-display-symbol {
         display: flex;
         align-items: center;
-        flex: 1 1 10%;
+        flex: 1 1 20%;
         padding: 0 0.5em;
         border-radius: var(--border-radius) 0 0 var(--border-radius);
         background-color: var(--background-color);
         color: var(--shade-medium-color);
         font-weight: bold;
       }
-      .exchange-name {
+      .stock-description {
         display: flex;
         align-items: center;
-        flex: 1 1 90%;
+        flex: 1 1 80%;
         padding: 0 1em;
         font-size: 0.8em;
         overflow: hidden;
@@ -86,6 +88,7 @@
       }
     </style>`;
 
-  customElements.define('sleek-exchanges', SleekExchanges);
+  customElements.define('sleek-stocks', SleekStocks);
 })();
+
 

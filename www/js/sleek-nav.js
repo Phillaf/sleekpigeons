@@ -14,7 +14,7 @@
   nav.innerHTML = `
     <nav>
       <ul id="navbar">
-        <li><a href="">sleekpigeons</a></li>
+        <li><a href="/">sleekpigeons</a></li>
         <li><a href="http://status.sleekpigeons.com/d/xdlNPjXmk/nginx">status</a></li>
       </ul>
     </nav>`;
