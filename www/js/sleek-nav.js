@@ -13,7 +13,7 @@
   const nav = document.createElement('template');
   nav.innerHTML = `
     <nav>
-      <a id="logo" href="/">sleekpigeons</a></li>
+      <a id="logo" href="/">sleekpigeons</a>
       <ul id="navbar">
         <li><a href="/logs">logs</a></li>
         <li><a href="http://status.sleekpigeons.com/d/xdlNPjXmk/nginx">status</a></li>
@@ -25,8 +25,11 @@
     <style>
       nav {
         background-color: var(--dark-color);
-        height: 3em;
+        line-height: 3em;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
       }
       #logo {
         font-weight: bold;
@@ -34,27 +37,24 @@
         font-family: var(--font-headings);
         text-decoration: none;
         color: var(--background-color);
-        flex: 1;
+        display: inline-block;
       }
       ul {
         list-style: none;
         margin: 0px;
-        flex: 1;
+        padding: 0px;
         display: flex;
-        justify-content: flex-end;
+        flex-wrap: wrap;
       }
       li {
         color: var(--background-color);
         font-family: var(--font-headings);
-        flex: auto;
-        display: flex;
       }
       li > a {
         text-decoration: none;
         color: var(--background-color);
-        flex: 1;
-        text-align: center;
-        line-height: 3em;
+        padding: 0 1em;
+        display: inline-block;
       }
       a:hover {
         background-color: var(--medium-color);
