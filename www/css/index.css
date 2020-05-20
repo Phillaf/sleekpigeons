@@ -3,7 +3,7 @@ body {
   grid-template-columns: repeat(7, 1fr);
   grid-template-areas:
     "heading heading heading heading heading heading heading"
-    ". news news news exchanges exchanges ."
+    ". body body body body body ."
   ;
 }
 #heading {
@@ -17,9 +17,14 @@ body {
 sleek-nav {
   grid-area: navbar;
 }
+#body {
+  grid-area: body;
+  display: flex;
+  flex-wrap: wrap;
+}
 sleek-news {
-  grid-area: news;
+  flex: 3 3;
 }
 sleek-exchanges {
-  grid-area: exchanges;
+  flex: 1 1;
 }

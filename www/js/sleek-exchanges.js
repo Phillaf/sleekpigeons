@@ -25,12 +25,12 @@
     }
 
     createExchange = (exchange) => (
-      `<a href="/stocks/${exchange.code}">
-         <li class="exchange">
+      `<li class="exchange">
+         <a href="/stocks/${exchange.code}" title="${exchange.name.toLowerCase()}">
            <p class="exchange-code">${exchange.code}</p>
            <p class="exchange-name">${exchange.name.toLowerCase()}</p>
-         </li>
-       </a>`
+         </a>
+       </li>`
     );
 
   }
@@ -41,18 +41,12 @@
       ul, li, a, h3, p {
         padding: 0;
         margin: 0;
+        list-style: none;
       }
       ul {
         display: grid;
         grid-gap: 0.3em;
-        grid-template-columns: repeat(auto-fill, minmax(20em, auto));
-      }
-      li {
-        display: flex;
-        align-items: stretch;
-      }
-      .exchange {
-        list-style: none;
+        grid-template-columns: repeat(auto-fill, minmax(15em, auto));
       }
       a {
         text-decoration: none;
@@ -60,6 +54,8 @@
         border: 1px solid var(--shade-light-color);
         border-radius: var(--border-radius);
         background-color: var(--shade-light-color);
+        display: flex;
+        align-items: stretch;
       }
       a:hover {
         background-color: var(--shade-medium-color);
