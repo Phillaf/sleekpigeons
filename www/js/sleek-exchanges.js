@@ -38,7 +38,7 @@
   const style = document.createElement('template');
   style.innerHTML = `
     <style>
-      ul, li, a, h3, p {
+      ul, li, a, p {
         padding: 0;
         margin: 0;
         list-style: none;
