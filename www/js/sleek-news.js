@@ -15,7 +15,7 @@
     };
 
     getNews = async () => {
-      const response = await fetch('/api/v1/news');
+      const response = await fetch(this.getAttribute('src'));
       const articles = await response.json();
       let html = "";
       articles.forEach(article => {
