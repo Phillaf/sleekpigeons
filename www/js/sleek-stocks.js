@@ -28,7 +28,7 @@
 
     createStock = (stock) => (
       `<li class="stock">
-         <a href="#" title="${stock.description}">
+         <a href="/stock/${stock.displaySymbol}" title="${stock.description}">
            <p class="stock-display-symbol">${stock.displaySymbol}</p>
            <p class="stock-description">${stock.description}</p>
          </a>
