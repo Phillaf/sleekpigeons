@@ -45,29 +45,28 @@
   style.innerHTML = `
     <style>
       ul {
-        padding: 0;
-        margin: 0;
-      }
-      .article {
         list-style: none;
         word-break: break-word;
+        margin: 0;
+        padding: 0;
       }
       a{
+        color: var(--dark-colof);
         display: flex;
         flex-wrap: wrap;
         text-decoration: none;
-        color: var(--dark-colof);
       }
       a:hover {
         background-color: var(--shade-light-color);
       }
       .thumbnail {
         padding: 10px;
-        overflow: hidden;
-        flex: 1 1 200px;
         height: auto;
+        max-height: 300px;
         width: 100%;
         object-fit: cover;
+        overflow: hidden;
+        flex: 1 1 200px;
       }
       .details {
         padding: 10px;
@@ -83,26 +82,26 @@
       .category {
         background-color: var(--light-color);
         color: var(--background-color);
+        font-family: var(--font-headings);
         line-height: 2;
         padding: 0 1em;
         border-radius: var(--border-radius);
-        font-family: var(--font-headings);
       }
       .headline {
-        flex-basis: 100%;
-        position: relative;
-        font-size: 1em;
         background: var(--medium-color);
         color: var(--background-color);
+        font-family: var(--font-headings);
+        font-size: 1em;
+        margin: 0;
         padding: 0.5em 1em;
         border-radius: var(--border-radius);
-        font-family: var(--font-headings);
-        margin: 0;
+        flex-basis: 100%;
+        position: relative;
       }
       .summary {
-        flex-basis: 100%;
         max-height: 10em;
         overflow: hidden;
+        flex-basis: 100%;
       }
       </style>`;
 
