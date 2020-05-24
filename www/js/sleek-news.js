@@ -65,35 +65,36 @@
         padding: 10px;
         overflow: hidden;
         flex: 1 1 200px;
-        height: 200px;
+        height: auto;
+        width: 100%;
         object-fit: cover;
       }
       .details {
         padding: 10px;
-        flex: 10 1 300px;
+        flex: 30 1 300px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
       }
       p {
-        margin: 0;
+        margin: 0.2em 0;
       }
       .category {
         background-color: var(--light-color);
         color: var(--background-color);
         line-height: 2;
-        padding: 0.2em 1em;
+        padding: 0 1em;
         border-radius: var(--border-radius);
         font-family: var(--font-headings);
       }
       .headline {
         flex-basis: 100%;
         position: relative;
+        font-size: 1em;
         background: var(--medium-color);
         color: var(--background-color);
-        line-height: 2;
-        padding: 0.2em 1em;
+        padding: 0.5em 1em;
         border-radius: var(--border-radius);
         font-family: var(--font-headings);
         margin: 0;
