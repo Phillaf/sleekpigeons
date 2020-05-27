@@ -13,7 +13,9 @@
 </head>
 
 <body>
-  <sleek-exchanges></sleek-exchanges>
+  <sleek-searchbar event="filter"></sleek-searchbar>
+  <script src="/js/sleek-searchbar.js"></script>
+  <sleek-exchanges src="/api/v1/stock/exchange" filter-event="filter" limit=100></sleek-exchanges>
   <script src="/js/sleek-exchanges.js"></script>
 </body>
 

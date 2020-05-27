@@ -5,23 +5,36 @@
 
     constructor() {
       super();
-      const shadow = this.attachShadow({ mode: 'open' });
-      const exchanges = document.createElement('ul');
-      this.getExchanges().then(html => {
-        exchanges.innerHTML = html;
-        shadow.appendChild(exchanges);
-      });
-      shadow.appendChild(style.content.cloneNode(true));
+      this.shadow = this.attachShadow({ mode: 'open' });
+      this.exchanges = document.createElement('ul');
+      this.shadow.appendChild(this.exchanges);
+      this.shadow.appendChild(style.content.cloneNode(true));
+      window.addEventListener(this.getAttribute('filter-event'), this.filter, false);
     };
 
-    getExchanges = async () => {
-      const response = await fetch('/api/v1/stock/exchange');
-      const exchanges = await response.json();
+    async connectedCallback() {
+      const response = await fetch(this.getAttribute('src'));
+      this.data = await response.json();
+      this.updateExchanges(this.data);
+    }
+
+    filter = (event) => {
+      const partial = event.detail.toString().toLowerCase();
+      const filtered = this.data.filter(function(exchange) {
+        return exchange.code.toLowerCase().includes(partial) || exchange.name.toLowerCase().includes(partial);
+      });
+      this.updateExchanges(filtered);
+    }
+
+    updateExchanges = (exchanges) => {
+      if (this.hasAttribute("limit")) {
+        exchanges = exchanges.slice(0, this.getAttribute('limit'));
+      }
       let html = "";
       exchanges.forEach(exchange => {
         html += this.createExchange(exchange);
       });
-      return html;
+      this.exchanges.innerHTML = html;
     }
 
     createExchange = (exchange) => (
@@ -32,7 +45,6 @@
          </a>
        </li>`
     );
-
   }
 
   const style = document.createElement('template');
@@ -84,4 +96,3 @@
 
   customElements.define('sleek-exchanges', SleekExchanges);
 })();
-
