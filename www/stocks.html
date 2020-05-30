@@ -18,8 +18,12 @@
     <sleek-nav></sleek-nav>
     <script src="/js/sleek-nav.js"></script>
   </div>
-  <sleek-pills api="/js/pills-stocks-api.js" id="body"></sleek-pills>
-  <script type="module" src="/js/sleek-pills.js"></script>
+  <div id="stocks">
+    <sleek-searchbar event="filter"></sleek-searchbar>
+    <script src="/js/sleek-searchbar.js"></script>
+    <sleek-pills api="/js/pills-stocks-api.js" filter-event="filter" limit=100></sleek-pills>
+    <script type="module" src="/js/sleek-pills.js"></script>
+  </div>
 </body>
 
 </html>

@@ -17,6 +17,6 @@ body {
 sleek-nav {
   grid-area: navbar;
 }
-#body {
+#stocks {
   grid-area: body;
 }

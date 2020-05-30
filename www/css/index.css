@@ -26,7 +26,7 @@ sleek-news {
   min-width: 18em;
   flex: 3;
 }
-sleek-exchanges {
-  min-width: 10em;
+#exchanges {
+  min-width: 15em;
   flex: 1;
 }

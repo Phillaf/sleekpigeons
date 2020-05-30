@@ -1,6 +1,5 @@
 export async function getData() {
   const exchange = new URL(window.location.href).pathname.substring(8);
-  console.log(exchange);
   const response = await fetch(`/api/v1/stock/symbol?exchange=${exchange}`);
   const data = await response.json();
   return data.map((stock) => ({
