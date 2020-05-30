@@ -16,15 +16,15 @@
 <body>
   <div id="heading">
     <sleek-nav></sleek-nav>
-    <script src="/js/sleek-nav.js"></script>
+    <script type="module" src="/js/sleek-nav.js"></script>
   </div>
   <div id="body">
-    <sleek-news src="/api/v1/news"></sleek-news>
-    <script src="/js/sleek-news.js"></script>
+    <sleek-news api="/js/news-api.js"></sleek-news>
+    <script type="module" src="/js/sleek-news.js"></script>
 
     <div id="exchanges">
       <sleek-searchbar event="filter"></sleek-searchbar>
-      <script src="/js/sleek-searchbar.js"></script>
+      <script type="module" src="/js/sleek-searchbar.js"></script>
       <sleek-pills api="/js/pills-exchange-api.js" filter-event="filter" limit=100></sleek-pills>
       <script type="module" src="/js/sleek-pills.js"></script>
     </div>
