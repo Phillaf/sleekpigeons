@@ -4,7 +4,7 @@
   class SleekNav extends HTMLElement {
     constructor() {
       super();
-      const shadow = this.attachShadow({ mode: 'closed' });
+      const shadow = this.attachShadow({ mode: 'open' });
       shadow.appendChild(nav.content.cloneNode(true));
       shadow.appendChild(style.content.cloneNode(true));
     };
