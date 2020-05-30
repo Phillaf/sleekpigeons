@@ -8,3 +8,6 @@ export async function getData() {
     title: exchange.name.toLowerCase(),
   }));
 }
+export function getCodeWidth() {
+  return 3;
+}

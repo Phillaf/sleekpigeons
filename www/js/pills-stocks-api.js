@@ -9,4 +9,6 @@ export async function getData() {
     title: stock.description,
   }));
 }
-
+export function getCodeWidth() {
+  return 9;
+}
