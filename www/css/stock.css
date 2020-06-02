@@ -20,12 +20,6 @@ sleek-nav {
 #body {
   grid-area: body;
 }
-#updates {
-  display: flex;
-}
 sleek-news {
-  flex: 1;
-}
-sleek-development {
-  flex: 1;
+  display: flex;
 }

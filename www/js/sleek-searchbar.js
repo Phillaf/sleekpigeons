@@ -18,7 +18,7 @@ class SleekSearchbar extends HTMLElement {
         bubbles: true,
       })
     );
-  }
+  };
 }
 
 
