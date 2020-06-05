@@ -19,8 +19,12 @@
     <script type="module" src="/js/sleek-nav.js"></script>
   </div>
   <div id="body">
-    <sleek-stock-profile></sleek-stock-profile>
-    <script type="module" src="/js/sleek-stock-profile.js"></script>
+    <div id="top">
+      <sleek-stock-profile></sleek-stock-profile>
+      <script type="module" src="/js/sleek-stock-profile.js"></script>
+      <sleek-gauge api="/js/gauge-sentiment-api.js"></sleek-gauge>
+      <script type="module" src="/js/sleek-gauge.js"></script>
+    </div>
     <sleek-news api="/js/news-stock-api.js"></sleek-news>
     <script type="module" src="/js/sleek-news.js"></script>
   </div>

@@ -1,34 +1,39 @@
 class SleekGauge extends HTMLElement {
   constructor() {
     super();
-    const shadow = this.attachShadow({ mode: 'open' });
-    shadow.appendChild(gauge.content.cloneNode(true));
-    shadow.appendChild(style.content.cloneNode(true));
+    this.shadow = this.attachShadow({ mode: 'open' });
+    this.stylesheet = document.createElement('style')
+    this.shadow.appendChild(this.stylesheet);
+    this.gauge = document.createElement('div')
+    this.gauge.setAttribute('class', 'gauge');
+    this.shadow.appendChild(this.gauge);
   };
-}
 
-const gauge = document.createElement('template');
-gauge.innerHTML = `
-  <div class="gauge">
-    <p>Top</p>
+  async connectedCallback() {
+    const Module = await import(this.getAttribute('api'))
+    const data = await Module.getData();
+    this.stylesheet.innerHTML = this.createStyle(data);
+    this.gauge.innerHTML = this.createGauge(data);
+  }
+
+  createGauge = (data) => (`
+    <p>${data.gaugeTitle}: ${data.gauge * 100}%</p>
     <div class="mask">
       <div class="semi-circle"></div>
       <div class="semi-circle-mask"></div>
       <div class="arrow"></div>
     </div>
-    <p>Bottom</p>
-  </div>`;
+    <p>${data.arrowTitle}: ${data.arrow * 100}%</p>`
+  );
 
-const style = document.createElement('template');
-style.innerHTML = `
-  <style>
+  createStyle = (data) => (`
     :host {
       --outer-size: 12em;
       --inner-size: 11em;
       --arrow-thickness: 0.3em;
       --half-gauge-thickness: calc(calc(var(--outer-size) - var(--inner-size))/4);
-      --rotation: 74deg;
-      --rotation-arrow: 149deg;
+      --rotation: ${data.gauge * 180}deg;
+      --rotation-arrow: ${data.arrow * 180}deg;
     }
     .gauge{
       display: flex;
@@ -94,8 +99,9 @@ style.innerHTML = `
       background: var(--shade-dark-color);
       transform: rotate(var(--rotation-arrow));
       transform-origin: center right;
-    }
-  </style>`;
+    }`
+  );
+}
 
 customElements.define('sleek-gauge', SleekGauge);
 export {SleekGauge};

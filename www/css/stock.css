@@ -19,7 +19,9 @@ sleek-nav {
 }
 #body {
   grid-area: body;
+  padding-top: 20px;
 }
-sleek-news {
+#top {
   display: flex;
+  justify-content: space-between;
 }

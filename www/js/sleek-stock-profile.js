@@ -3,36 +3,36 @@ class SleekStockProfile extends HTMLElement {
   constructor() {
     super();
     const shadow = this.attachShadow({ mode: 'open' });
-    this.symbol = new URL(window.location.href).pathname.substring(7);
-
-    this.getProfile().then(profile => {
-      shadow.appendChild(profile);
-    });
-
+    this.profile = document.createElement('div');
+    this.profile.setAttribute('class', 'profile');
+    shadow.appendChild(this.profile);
     shadow.appendChild(style.content.cloneNode(true));
   };
 
-  getProfile = async () => {
-    const response = await fetch(`/api/v1/stock/profile2?symbol=${this.symbol}`);
-    const data = await response.json();
-    const div = document.createElement('div');
-    div.innerHTML = this.createProfile(data);
-    return div;
+  async connectedCallback() {
+    const data = await this.getProfile();
+    this.profile.innerHTML = await this.createProfile(data);
   }
+
+  getProfile = async () => {
+    const symbol = new URL(window.location.href).pathname.substring(7);
+    const response = await fetch(`/api/v1/stock/profile2?symbol=${symbol}`);
+    return await response.json();
+  }
+
   createProfile = (stock) => (`
-    <dl class="profile">
-      <div class="country"><dt>country</dt><dd>${stock.country}</dd></div>
-      <div class="currency"><dt>Currency</dt><dd>${stock.currency}</dd></div>
-      <div class="exchange"><dt>Exchange</dt><dd>${stock.exchange}</dd></div>
-      <div class="finnhubIndustry"><dt>Industry</dt><dd>${stock.finnhubIndustry}</dd></div>
-      <div class="ipo"><dt>IPO</dt><dd>${stock.ipo}</dd></div>
-      <div class="logo"><dt>Logo</dt><dd>${stock.logo}</dd></div>
-      <div class="marketCapitalization"><dt>Market Capitalization</dt><dd>${stock.marketCapitalization}</dd></div>
-      <div class="name"><dt>Name</dt><dd>${stock.name}</dd></div>
-      <div class="phone"><dt>Phone</dt><dd>${stock.phone}</dd></div>
-      <div class="shareOutstanding"><dt>Share Outstanding</dt><dd>${stock.shareOutstanding}</dd></div>
-      <div class="ticker"><dt>Ticker</dt><dd>${stock.ticker}</dd></div>
-      <div class="weburl"><dt>Web Url</dt><dd>${stock.weburl}</dd></div>
+    <img src="${stock.logo}"/>
+    <div class="title">
+      <h2>${stock.name}</h2>
+      <p>${stock.ticker}</p>
+      <a href="${stock.weburl}"/>${stock.weburl.replace(/(^\w+:|^)\/\//, '').replace(/\/$/, '')}</a>
+    </div>
+    <dl>
+      <div><dt>Country</dt><dd>${stock.country}</dd></div>
+      <div><dt>Industry</dt><dd>${stock.finnhubIndustry}</dd></div>
+      <div><dt>IPO</dt><dd>${stock.ipo}</dd></div>
+      <div><dt>Market Capitalization</dt><dd>${stock.marketCapitalization}</dd></div>
+      <div><dt>Share Outstanding</dt><dd>${stock.shareOutstanding}</dd></div>
     </dl>`
   );
 }
@@ -40,6 +40,39 @@ class SleekStockProfile extends HTMLElement {
 const style = document.createElement('template');
 style.innerHTML = `
   <style>
+    .profile {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    img {
+      height: 100px;
+      width: auto;
+    }
+    h2 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .title > p {
+      font-size: 1.5em;
+      font-weight: bold;
+      margin: 0;
+      color: var(--shade-dark-color);
+    }
+    dl > div {
+      display: flex;
+    }
+    dt {
+      min-width: 10.5em;
+      text-align: right;
+      padding-right: 1em;
+      font-weight: bold;
+    }
+    dd {
+      justify-content: flex-start;
+      min-width: 6em;
+      margin: 0;
+    }
   </style>`;
 
 customElements.define('sleek-stock-profile', SleekStockProfile);
