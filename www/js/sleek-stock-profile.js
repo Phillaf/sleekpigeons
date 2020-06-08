@@ -48,6 +48,7 @@ style.innerHTML = `
     img {
       height: 100px;
       width: auto;
+      margin: 0 1em 0 0;
     }
     h2 {
       margin: 0;

@@ -17,13 +17,13 @@ class SleekGauge extends HTMLElement {
   }
 
   createGauge = (data) => (`
-    <p>${data.gaugeTitle}: ${data.gauge * 100}%</p>
+    <p>${data.gaugeTitle}: ${Math.round(data.gauge * 100)}%</p>
     <div class="mask">
       <div class="semi-circle"></div>
       <div class="semi-circle-mask"></div>
       <div class="arrow"></div>
     </div>
-    <p>${data.arrowTitle}: ${data.arrow * 100}%</p>`
+    <p>${data.arrowTitle}: ${Math.round(data.arrow * 100)}%</p>`
   );
 
   createStyle = (data) => (`
