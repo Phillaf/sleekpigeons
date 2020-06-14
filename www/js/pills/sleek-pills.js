@@ -9,24 +9,18 @@ class SleekPills extends HTMLElement {
   };
 
   async connectedCallback() {
-    const Module = await import(this.getAttribute('api'))
-    this.data = await Module.getData();
-    this.updateList(this.data);
-    this.shadow.appendChild(this.createStyle(Module.getCodeWidth()).content.cloneNode(true));
+    const Api = await import(this.getAttribute('api'))
+    this.api = await Api.build(this.getAttribute("limit"));
+    this.updateList(this.api.getData(1));
+    this.shadow.appendChild(this.createStyle(this.api.getCodeWidth()).content.cloneNode(true));
   }
 
   filter = (event) => {
     const partial = event.detail.toString().toLowerCase();
-    const filtered = this.data.filter(function(datum) {
-      return datum.code.toLowerCase().includes(partial) || datum.name.toLowerCase().includes(partial);
-    });
-    this.updateList(filtered);
+    this.updateList(this.api.filter(partial));
   }
 
   updateList = (data) => {
-    if (this.hasAttribute("limit")) {
-      data = data.slice(0, this.getAttribute('limit'));
-    }
     let html = "";
     data.forEach(datum => {
       html += this.createLi(datum);
