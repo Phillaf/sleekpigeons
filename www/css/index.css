@@ -19,14 +19,5 @@ sleek-nav {
 }
 #body {
   grid-area: body;
-  display: flex;
   flex-wrap: wrap;
-}
-sleek-news {
-  min-width: 18em;
-  flex: 3;
-}
-#exchanges {
-  min-width: 15em;
-  flex: 1;
 }

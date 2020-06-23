@@ -20,7 +20,7 @@ class StocksApi extends Api {
   }
 
   getCodeWidth() {
-    return 9;
+    return 5;
   }
 }
 

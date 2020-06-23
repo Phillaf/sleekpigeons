@@ -12,6 +12,7 @@ nav.innerHTML = `
   <nav>
     <a id="logo" href="/">sleekpigeons</a>
     <ul id="navbar">
+      <li><a href="/stocks/US">stocks</a></li>
       <li><a href="/logs">logs</a></li>
       <li><a href="http://status.sleekpigeons.com/d/xdlNPjXmk/nginx">status</a></li>
     </ul>
