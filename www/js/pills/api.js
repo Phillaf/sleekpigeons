@@ -2,7 +2,7 @@ export default class Api {
 
   constructor(data, limit) {
     this.data = data;
-    this.limit = limit;
+    this.limit = +limit;
   }
 
   getPageCount() {

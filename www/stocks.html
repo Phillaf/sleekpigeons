@@ -19,10 +19,12 @@
     <script type="module" src="/js/sleek-nav.js"></script>
   </div>
   <div id="stocks">
-    <sleek-searchbar event="filter"></sleek-searchbar>
+    <sleek-searchbar event="filter-stocks"></sleek-searchbar>
     <script type="module" src="/js/sleek-searchbar.js"></script>
-    <sleek-pills api="/js/pills/stocks-api.js" filter-event="filter" limit=100></sleek-pills>
+    <sleek-pills api="/js/pills/stocks-api.js" filter-event="filter-stocks" paginate-event="paginate-stocks" limit=200></sleek-pills>
     <script type="module" src="/js/pills/sleek-pills.js"></script>
+    <sleek-pagination paginate-event="paginate-stocks"></sleek-pagination>
+    <script type="module" src="/js/sleek-pagination.js"></script>
   </div>
 </body>
 

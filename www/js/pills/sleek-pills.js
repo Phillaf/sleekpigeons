@@ -1,3 +1,5 @@
+import '/js/sleek-pagination.js'
+
 class SleekPills extends HTMLElement {
 
   constructor() {
@@ -6,13 +8,29 @@ class SleekPills extends HTMLElement {
     this.ul = document.createElement('ul');
     this.shadow.appendChild(this.ul);
     window.addEventListener(this.getAttribute('filter-event'), this.filter, false);
+    window.addEventListener(this.getAttribute('pagination-event') + "-page-change", this.pageChange, false);
   };
 
   async connectedCallback() {
     const Api = await import(this.getAttribute('api'))
     this.api = await Api.build(this.getAttribute("limit"));
-    this.updateList(this.api.getData(1));
+    this.dispatchPageCount(this.api.getPageCount());
+    const searchParams = new URLSearchParams(window.location.search);
+    this.updateList(this.api.getData(searchParams.get('page') ?? 1));
     this.shadow.appendChild(this.createStyle(this.api.getCodeWidth()).content.cloneNode(true));
+  }
+
+  pageChange = (event) => {
+    this.updateList(this.api.getData(event.detail));
+  }
+
+  dispatchPageCount = (pageCount) => {
+    this.dispatchEvent(
+      new CustomEvent(this.getAttribute('event') + "-init", {
+        detail: pageCount,
+        bubbles: true,
+      })
+    );
   }
 
   filter = (event) => {
