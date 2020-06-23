@@ -28,5 +28,8 @@ export async function build(limit) {
   const exchange = new URL(window.location.href).pathname.substring(8);
   const response = await fetch(`/api/v1/stock/symbol?exchange=${exchange}`);
   const data = await response.json();
-  return new StocksApi(data, limit);
+  const cleanData = data.filter(function(stock) {
+    return stock.description !== '';
+  });
+  return new StocksApi(cleanData, limit);
 }
