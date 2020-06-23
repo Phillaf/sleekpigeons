@@ -1,6 +1,6 @@
 # SleekPigeons
 
-Render the news from Finnhub.io
+Render the data from Finnhub.io
 
 ## Install
 
@@ -13,4 +13,4 @@ curl 127.0.0.1/news
 
 ## Demo
 
-http://sleekpigeons.com/news
+http://sleekpigeons.com
