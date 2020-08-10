@@ -22,7 +22,7 @@ class PeersApi extends Api {
 
 export async function build(limit) {
   const symbol = new URL(window.location.href).pathname.substring(7);
-  const response = await fetch(`/api/v1/stock/peers?symbol=${symbol}`);
+  const response = await fetch(`/fin-api/v1/stock/peers?symbol=${symbol}`);
   const data = await response.json();
   return new PeersApi(data, limit);
 }

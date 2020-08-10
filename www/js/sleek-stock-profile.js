@@ -16,7 +16,7 @@ class SleekStockProfile extends HTMLElement {
 
   getProfile = async () => {
     const symbol = new URL(window.location.href).pathname.substring(7);
-    const response = await fetch(`/api/v1/stock/profile2?symbol=${symbol}`);
+    const response = await fetch(`/fin-api/v1/stock/profile2?symbol=${symbol}`);
     return await response.json();
   }
 

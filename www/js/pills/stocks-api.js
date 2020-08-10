@@ -26,7 +26,7 @@ class StocksApi extends Api {
 
 export async function build(limit) {
   const exchange = new URL(window.location.href).pathname.substring(8);
-  const response = await fetch(`/api/v1/stock/symbol?exchange=${exchange}`);
+  const response = await fetch(`/fin-api/v1/stock/symbol?exchange=${exchange}`);
   const data = await response.json();
   const cleanData = data.filter(stock => {
     return stock.description !== ''

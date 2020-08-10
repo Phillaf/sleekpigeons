@@ -1,6 +1,6 @@
 export async function getData() {
   const symbol = new URL(window.location.href).pathname.substring(7);
-  const response = await fetch(`/api/v1/news-sentiment?symbol=${symbol}`);
+  const response = await fetch(`/fin-api/v1/news-sentiment?symbol=${symbol}`);
   const data = await response.json();
   return {
     gauge: data.sectorAverageBullishPercent,

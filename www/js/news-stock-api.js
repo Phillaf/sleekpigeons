@@ -4,7 +4,7 @@ export async function getData() {
   let from = new Date();
   from.setDate(from.getDate() - 30);
   from = from.toISOString().slice(0,10);
-  const response = await fetch(`/api/v1/company-news?symbol=${symbol}&from=${from}&to=${to}`);
+  const response = await fetch(`/fin-api/v1/company-news?symbol=${symbol}&from=${from}&to=${to}`);
   return await response.json();
 }
 
