@@ -14,3 +14,4 @@ services:
       - ./mtail:/etc/mtail
     environment:
       - FINNHUB_KEY
+      - QUANDL_KEY
