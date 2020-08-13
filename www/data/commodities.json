@@ -1,0 +1,1067 @@
+[
+    {
+        "commodity": "Gold",
+        "sources": [
+            {
+                "name": "Gold, London A.M. Fixing",
+                "source": "LBMA",
+                "code": "LBMA/GOLD"
+            },
+            {
+                "name": "Gold, London A.M. Fixing",
+                "source": "LBMA",
+                "code": "LBMA/GOLD"
+            },
+            {
+                "name": "Gold, London P.M. Fixing",
+                "source": "LBMA",
+                "code": "BMA/GOLD"
+            },
+            {
+                "name": "Gold, World Gold Council",
+                "source": "WGC",
+                "code": "WGC/GOLD_DAILY_USD"
+            },
+            {
+                "name": "Gold, Bundesbank",
+                "source": "BUNDESBANK",
+                "code": "BUNDESBANK/BBK01_WT5511"
+            },
+            {
+                "name": "Gold, COMEX Gold Futures",
+                "source": "COMEX",
+                "code": "CHRIS/CME_GC1"
+            },
+            {
+                "name": "Gold, Shanghai Gold Futures",
+                "source": "SHFE",
+                "code": "SHFE/AUV2013"
+            },
+            {
+                "name": "Gold, World Bank",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_GOLD"
+            }
+        ]
+    },
+    {
+        "commodity": "Silver",
+        "sources": [
+            {
+                "name": "Silver, London fixing, USD equivalent",
+                "source": "LBMA",
+                "code": "LBMA/SILVER"
+            },
+            {
+                "name": "Silver, Shanghai Silver Futures",
+                "source": "SHFE",
+                "code": "SHFE/AGV2013"
+            },
+            {
+                "name": "Silver, COMEX Silver Futures",
+                "source": "COMEX",
+                "code": "CHRIS/CME_SI1"
+            },
+            {
+                "name": "Silver, World Bank",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_SILVER"
+            }
+        ]
+    },
+    {
+        "commodity": "Platinum",
+        "sources": [
+            {
+                "name": "Platinum, Johnson Mathey London",
+                "source": "JOHNMATT",
+                "code": "JOHNMATT/PLAT"
+            },
+            {
+                "name": "Platinum, NYMEX Platinum Futures",
+                "source": "NYMEX",
+                "code": "CHRIS/CME_PL1"
+            }
+        ]
+    },
+    {
+        "commodity": "Palladium",
+        "sources": [
+            {
+                "name": "Palladium, Johnson Mathey London",
+                "source": "JOHNMATT",
+                "code": "JOHNMATT/PALL"
+            },
+            {
+                "name": "Palladium, NYMEX Palladium Futures",
+                "source": "NYMEX",
+                "code": "CHRIS/CME_PA1"
+            }
+        ]
+    },
+    {
+        "commodity": "Iridium",
+        "sources": [
+            {
+                "name": "Iridium",
+                "source": "JOHNMATT",
+                "code": "JOHNMATT/IRID"
+            }
+        ]
+    },
+    {
+        "commodity": "Rhodium",
+        "sources": [
+            {
+                "name": "Rhodium",
+                "source": "JOHNMATT",
+                "code": "JOHNMATT/RHOD"
+            }
+        ]
+    },
+    {
+        "commodity": "Ruthenium",
+        "sources": [
+            {
+                "name": "Ruthenium",
+                "source": "JOHNMATT",
+                "code": "JOHNMATT/RUTH"
+            }
+        ]
+    },
+    {
+        "commodity": "Aluminum",
+        "sources": [
+            {
+                "name": "Aluminum, LME",
+                "source": "LME",
+                "code": "LME/PR_AL"
+            },
+            {
+                "name": "Aluminum, ODA",
+                "source": "ODA",
+                "code": "ODA/PALUM_USD"
+            },
+            {
+                "name": "Shanghai Aluminum Futures",
+                "source": "SHFE",
+                "code": "SHFE/ALV2013"
+            }
+        ]
+    },
+    {
+        "commodity": "Cobalt",
+        "sources": [
+            {
+                "name": "Cobalt, LME",
+                "source": "LME",
+                "code": "LME/PR_CO"
+            }
+        ]
+    },
+    {
+        "commodity": "Copper",
+        "sources": [
+            {
+                "name": "Copper, LME",
+                "source": "LME",
+                "code": "LME/PR_CU"
+            },
+            {
+                "name": "Copper, ODA",
+                "source": "ODA",
+                "code": "ODA/PCOPP_USD"
+            },
+            {
+                "name": "Copper Futures",
+                "source": "COMEX",
+                "code": "CHRIS/CME_HG1"
+            },
+            {
+                "name": "Shanghai Copper Futures",
+                "source": "SHFE",
+                "code": "SHFE/CUV2013"
+            },
+            {
+                "name": "Iron Ore, Tianjin (ODA)",
+                "source": "ODA",
+                "code": "ODA/PIORECR_USD"
+            }
+        ]
+    },
+    {
+        "commodity": "Lead",
+        "sources": [
+            {
+                "name": "Lead, LME",
+                "source": "LME",
+                "code": "LME/PR_PB"
+            },
+            {
+                "name": "Lead, ODA",
+                "source": "ODA",
+                "code": "ODA/PLEAD_USD"
+            },
+            {
+                "name": "Shanghai Lead Futures",
+                "source": "SHFE",
+                "code": "SHFE/PBV2013"
+            }
+        ]
+    },
+    {
+        "commodity": "Molybdenum",
+        "sources": [
+            {
+                "name": "Molybdenum, LME",
+                "source": "LME",
+                "code": "LME/PR_MO"
+            }
+        ]
+    },
+    {
+        "commodity": "Nickel",
+        "sources": [
+            {
+                "name": "Nickel, LME",
+                "source": "LME",
+                "code": "LME/PR_NI"
+            },
+            {
+                "name": "Nickel, ODA",
+                "source": "ODA",
+                "code": "ODA/PNICK_USD"
+            }
+        ]
+    },
+    {
+        "commodity": "Steel",
+        "sources": [
+            {
+                "name": "Steel Billet, LME",
+                "source": "LME",
+                "code": "LME/PR_FM"
+            },
+            {
+                "name": "Steel Wire",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_STL_JP_WIROD"
+            },
+            {
+                "name": "Shanghai Steel Rebar Futures",
+                "source": "SHFE",
+                "code": "SHFE/RBV2013"
+            },
+            {
+                "name": "Shanghai Steel Wire Futures",
+                "source": "SHFE",
+                "code": "SHFE/WRV2013"
+            }
+        ]
+    },
+    {
+        "commodity": "Tin",
+        "sources": [
+            {
+                "name": "Tin, LME",
+                "source": "LME",
+                "code": "LME/PR_TN"
+            },
+            {
+                "name": "Tin, ODA",
+                "source": "ODA",
+                "code": "ODA/PTIN_USD"
+            }
+        ]
+    },
+    {
+        "commodity": "Zinc",
+        "sources": [
+            {
+                "name": "Zinc, LME",
+                "source": "LME",
+                "code": "LME/PR_ZI"
+            },
+            {
+                "name": "Zinc, ODA",
+                "source": "ODA",
+                "code": "ODA/PZINC_USD"
+            },
+            {
+                "name": "Shanghai Zinc Futures",
+                "source": "SHFE",
+                "code": "SHFE/ZNV2013"
+            }
+        ]
+    },
+    {
+        "commodity": "Barley",
+        "sources": [
+            {
+                "name": "Barley, Western Canada (ODA)",
+                "source": "ODA",
+                "code": "ODA/PBARL_USD"
+            },
+            {
+                "name": "Barley, Western Canada (WB)",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_BARLEY"
+            }
+        ]
+    },
+    {
+        "commodity": "Corn",
+        "sources": [
+            {
+                "name": "Corn, Top Flight Grain Co-op",
+                "source": "TFGRAIN",
+                "code": "TFGRAIN/CORN"
+            },
+            {
+                "name": "Corn, CBOT Corn Futures",
+                "source": "CME",
+                "code": "CHRIS/CME_C1"
+            },
+            {
+                "name": "Corn, U.S. Gulf Imports",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_MAIZE"
+            }
+        ]
+    },
+    {
+        "commodity": "Oats",
+        "sources": [
+            {
+                "name": "Oats, CBOT Oats Futures",
+                "source": "CME",
+                "code": "CHRIS/CME_O1"
+            }
+        ]
+    },
+    {
+        "commodity": "Rice",
+        "sources": [
+            {
+                "name": "Rice, Thailand (ODA)",
+                "source": "ODA",
+                "code": "ODA/PRICENPQ_USD"
+            },
+            {
+                "name": "Rice, CBOT Rice Futures",
+                "source": "CME",
+                "code": "CHRIS/CME_RR1"
+            },
+            {
+                "name": "Rice, Top Flight Grain Co-op",
+                "source": "TFGRAIN",
+                "code": "TFGRAIN/SOYBEANS"
+            }
+        ]
+    },
+    {
+        "commodity": "Soybean",
+        "sources": [
+            {
+                "name": "Soybean, CBOT Soybean Futures",
+                "source": "CME",
+                "code": "CHRIS/CME_S1"
+            },
+            {
+                "name": "Soybean, CBOT Soybean Meal Futures",
+                "source": "CME",
+                "code": "CHRIS/CME_SM1"
+            }
+        ]
+    },
+    {
+        "commodity": "Wheat",
+        "sources": [
+            {
+                "name": "Wheat, Soybean Oil",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_SOYBEAN_OIL"
+            },
+            {
+                "name": "Wheat, CBOT Soybean Oil Futures",
+                "source": "CME",
+                "code": "CHRIS/CME_BO1"
+            },
+            {
+                "name": "Wheat, Gulf of Mexico",
+                "source": "ODA",
+                "code": "ODA/PWHEAMT_USD"
+            },
+            {
+                "name": "Wheat, CBOT Wheat Futures",
+                "source": "CME",
+                "code": "CHRIS/CME_W1"
+            }
+        ]
+    },
+    {
+        "commodity": "Dairy",
+        "sources": [
+            {
+                "name": "Dairy, CME Milk Futures",
+                "source": "CME",
+                "code": "CHRIS/CME_DA1"
+            }
+        ]
+    },
+    {
+        "commodity": "Cattle",
+        "sources": [
+            {
+                "name": "Cattle, Beef (ODA)",
+                "source": "ODA",
+                "code": "ODA/PBEEF_USD"
+            },
+            {
+                "name": "Cattle, CME Live Cattle Futures",
+                "source": "CME",
+                "code": "CHRIS/CME_LC1"
+            },
+            {
+                "name": "Cattle, CME Feeder Cattle Futures",
+                "source": "CME",
+                "code": "CHRIS/CME_FC1"
+            },
+            {
+                "name": "Cattle, Hides, Chicago (ODA)",
+                "source": "ODA",
+                "code": "ODA/PHIDE_USD"
+            }
+        ]
+    },
+    {
+        "commodity": "Poultry",
+        "sources": [
+            {
+                "name": "Poulty, Chicken, Georgia (ODA)",
+                "source": "ODA",
+                "code": "ODA/PPOULT_USD"
+            }
+        ]
+    },
+    {
+        "commodity": "Pork",
+        "sources": [
+            {
+                "name": "Pork, Pork, Chicago (ODA)",
+                "source": "ODA",
+                "code": "ODA/PPORK_USD"
+            },
+            {
+                "name": "Pork, CME Lean Hog Futures",
+                "source": "CME",
+                "code": "CHRIS/CME_LN1"
+            }
+        ]
+    },
+    {
+        "commodity": "Lamb",
+        "sources": [
+            {
+                "name": "Fats, Lamb",
+                "source": "ODA",
+                "code": "ODA/PLAMB_USD"
+            }
+        ]
+    },
+    {
+        "commodity": "Wool",
+        "sources": [
+            {
+                "name": "Wool",
+                "source": "ODA",
+                "code": "ODA/PWOOLC_USD"
+            }
+        ]
+    },
+    {
+        "commodity": "Salmon",
+        "sources": [
+            {
+                "name": "Salmon",
+                "source": "ODA",
+                "code": "ODA/PSALM_USD"
+            }
+        ]
+    },
+    {
+        "commodity": "Shrimp",
+        "sources": [
+            {
+                "name": "Shrimp",
+                "source": "ODA",
+                "code": "ODA/PSHRI_USD"
+            }
+        ]
+    },
+    {
+        "commodity": "Fishmeal",
+        "sources": [
+            {
+                "name": "Fishmeal",
+                "source": "ODA",
+                "code": "ODA/PFISH_USD"
+            }
+        ]
+    },
+    {
+        "commodity": "Gasoline",
+        "sources": [
+            {
+                "name": "NYMEX RBOB Gasoline Futures",
+                "source": "NYMEX",
+                "code": "CHRIS/CME_RB1"
+            },
+            {
+                "name": "Los Angeles Reformulated RBOB Regular Gasoline Spot",
+                "source": "DOE",
+                "code": "DOE/EER_EPMRR_PF4_Y05LA_DPG"
+            },
+            {
+                "name": "Europe & Central Asia (all income levels): Pump for gasoline (US$ per liter)",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/ECS_EP_PMP_SGAS_CD"
+            },
+            {
+                "name": "US Midgrade Conventional Gas",
+                "source": "FRED",
+                "code": "FRED/GASMIDCOVW"
+            },
+            {
+                "name": "Conventional Gasolines: New York Harbor, Regular",
+                "source": "FRED",
+                "code": "FRED/DGASNYH"
+            },
+            {
+                "name": "US Regular Conventional Gas",
+                "source": "FRED",
+                "code": "FRED/GASREGCOVW"
+            },
+            {
+                "name": "Conventional Gasolines: U.S. Gulf Coast, Regular",
+                "source": "FRED",
+                "code": "FRED/DGASUSGULF"
+            },
+            {
+                "name": "Consumer Index for All Urban Consumers: Gasoline (all types)",
+                "source": "FRED",
+                "code": "FRED/CUUR0000SETB01"
+            },
+            {
+                "name": "US All Grades Conventional Gas",
+                "source": "FRED",
+                "code": "FRED/GASALLCOVW"
+            },
+            {
+                "name": "US Premium Conventional Gas",
+                "source": "FRED",
+                "code": "FRED/GASPRMCOVW"
+            }
+        ]
+    },
+    {
+        "commodity": "Crude Oil",
+        "sources": [
+            {
+                "name": "NYMEX Crude Oil Futures",
+                "source": "NYMEX",
+                "code": "CHRIS/CME_CL1"
+            },
+            {
+                "name": "ICE Brent Crude Oil Futures",
+                "source": "ICE",
+                "code": "CHRIS/ICE_B1"
+            },
+            {
+                "name": "U.S. Landed Costs of Canadian Light Sour Blend Crude Oil",
+                "source": "DOE",
+                "code": "DOE/I19263000008"
+            },
+            {
+                "name": "WTI Crude Oil Spot Cushing, OK FOB",
+                "source": "DOE",
+                "code": "DOE/RWTC"
+            },
+            {
+                "name": "Europe Brent Crude Oil Spot FOB",
+                "source": "DOE",
+                "code": "DOE/RBRTE"
+            },
+            {
+                "name": "U.S. FOB Costs of Non-OPEC Countries Crude Oil",
+                "source": "DOE",
+                "code": "DOE/I070000004"
+            },
+            {
+                "name": "U.S. FOB Costs of OPEC Countries Crude Oil",
+                "source": "DOE",
+                "code": "DOE/I060000004"
+            },
+            {
+                "name": "Crude Oils from 1861",
+                "source": "BRP",
+                "code": "BRP/CRUDE_OIL_PRICES"
+            },
+            {
+                "name": "OPEC Reference Basket",
+                "source": "OPEC",
+                "code": "OPEC/ORB"
+            },
+            {
+                "name": "Dubai Crude Oil",
+                "source": "ODA",
+                "code": "ODA/POILDUB_USD"
+            },
+            {
+                "name": "Blended Crude Oil",
+                "source": "ODA",
+                "code": "ODA/POILAPSP_USD"
+            },
+            {
+                "name": "WTI Crude Oil",
+                "source": "ODA",
+                "code": "ODA/POILWTI_USD"
+            },
+            {
+                "name": "Brent Crude Oil",
+                "source": "ODA",
+                "code": "ODA/POILBRE_USD"
+            }
+        ]
+    },
+    {
+        "commodity": "Natural Gas",
+        "sources": [
+            {
+                "name": "NYMEX Natural Gas Futures",
+                "source": "NYMEX",
+                "code": "CHRIS/CME_NG1"
+            },
+            {
+                "name": "ICE UK Natural Gas Futures",
+                "source": "ICE",
+                "code": "CHRIS/ICE_M1"
+            },
+            {
+                "name": "Natural Gass (vs. Crude)",
+                "source": "BRP",
+                "code": "BRP/GAS_PRICES"
+            },
+            {
+                "name": "Germany Natural Gas",
+                "source": "ODA",
+                "code": "ODA/PNGASEU_USD"
+            },
+            {
+                "name": "Henry Hub Natural Gas",
+                "source": "ODA",
+                "code": "ODA/PNGASUS_USD"
+            },
+            {
+                "name": "Japan Natural Gas",
+                "source": "ODA",
+                "code": "ODA/PNGASJP_USD"
+            },
+            {
+                "name": "Natural Gas: Henry Hub, LA",
+                "source": "FRED",
+                "code": "FRED/GASPRICE"
+            },
+            {
+                "name": "Import (End Use): Gas-natural",
+                "source": "FRED",
+                "code": "FRED/IR10110"
+            }
+        ]
+    },
+    {
+        "commodity": "Coal",
+        "sources": [
+            {
+                "name": "U.S. Coals, 1949-2005",
+                "source": "EPI",
+                "code": "EPI/152"
+            },
+            {
+                "name": "US Coals by Region",
+                "source": "DOE",
+                "code": "DOE/COAL"
+            },
+            {
+                "name": "Coals",
+                "source": "BRP",
+                "code": "BRP/COAL_PRICES"
+            },
+            {
+                "name": "Coal, South African export Monthly",
+                "source": "INDEXMUNDI",
+                "code": "INDEXMUNDI/COMMODITY_COALSOUTHAFRICANEXPORTPRICE"
+            },
+            {
+                "name": "Coal",
+                "source": "ODA",
+                "code": "ODA/PCOALAU_USD"
+            },
+            {
+                "name": "Coal, Australia",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_COAL_AUS"
+            },
+            {
+                "name": "Coal Exports,s for Great Britain",
+                "source": "FRED",
+                "code": "FRED/M04111GBM318NNBR"
+            },
+            {
+                "name": "Wholesale of Coal for Essen, Germany",
+                "source": "FRED",
+                "code": "FRED/M04I1ADE00ESSM372NNBR"
+            }
+        ]
+    },
+    {
+        "commodity": "Coffee",
+        "sources": [
+            {
+                "name": "Arabica Coffee",
+                "source": "ODA",
+                "code": "ODA/PCOFFOTM_USD"
+            },
+            {
+                "name": "Robusta Coffee",
+                "source": "ODA",
+                "code": "ODA/PCOFFROB_USD"
+            },
+            {
+                "name": "Coffee Futures",
+                "source": "ICE",
+                "code": "CHRIS/ICE_KC1"
+            },
+            {
+                "name": "Cocoa beans",
+                "source": "ODA",
+                "code": "ODA/PCOCO_USD"
+            }
+        ]
+    },
+    {
+        "commodity": "Cocoa",
+        "sources": [
+            {
+                "name": "Cocoa Futures",
+                "source": "ICE",
+                "code": "CHRIS/ICE_CC1"
+            }
+        ]
+    },
+    {
+        "commodity": "Tobacco",
+        "sources": [
+            {
+                "name": "Tobacco",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_TOBAC_US"
+            }
+        ]
+    },
+    {
+        "commodity": "Tea",
+        "sources": [
+            {
+                "name": "Tea",
+                "source": "ODA",
+                "code": "ODA/PTEA_USD"
+            },
+            {
+                "name": "Tea, Mombasa auctions",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_TEA_MOMBASA"
+            }
+        ]
+    },
+    {
+        "commodity": "Sugar",
+        "sources": [
+            {
+                "name": "US Imports Sugar",
+                "source": "ODA",
+                "code": "ODA/PSUGAUSA_USD"
+            },
+            {
+                "name": "Sugar No. 11 Futures",
+                "source": "ICE",
+                "code": "CHRIS/ICE_SB1"
+            }
+        ]
+    },
+    {
+        "commodity": "Groundnuts",
+        "sources": [
+            {
+                "name": "Groundnuts (Peanuts)",
+                "source": "ODA",
+                "code": "ODA/PGNUTS_USD"
+            }
+        ]
+    },
+    {
+        "commodity": "Oranges",
+        "sources": [
+            {
+                "name": "Oranges",
+                "source": "ODA",
+                "code": "ODA/PORANG_USD"
+            },
+            {
+                "name": "Orange Juice Futures",
+                "source": "ICE",
+                "code": "CHRIS/ICE_OJ1"
+            }
+        ]
+    },
+    {
+        "commodity": "Bananas",
+        "sources": [
+            {
+                "name": "Bananas",
+                "source": "ODA",
+                "code": "ODA/PBANSOP_USD"
+            },
+            {
+                "name": "Bananas, US",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_BANANA_US"
+            }
+        ]
+    },
+    {
+        "commodity": "Vegetable Oil",
+        "sources": [
+            {
+                "name": "Rapeseed Oil",
+                "source": "ODA",
+                "code": "ODA/PROIL_USD"
+            },
+            {
+                "name": "Sunflower Oil",
+                "source": "ODA",
+                "code": "ODA/PSUNO_USD"
+            },
+            {
+                "name": "Olive Oil",
+                "source": "ODA",
+                "code": "ODA/POLVOIL_USD"
+            },
+            {
+                "name": "Palm Oil",
+                "source": "ODA",
+                "code": "ODA/PPOIL_USD"
+            },
+            {
+                "name": "Palmkernal oil",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_PLMKRNL_OIL"
+            },
+            {
+                "name": "Groundnut oil",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_GRNUT_OIL"
+            }
+        ]
+    },
+    {
+        "commodity": "Logs",
+        "sources": [
+            {
+                "name": "Hard Logs",
+                "source": "ODA",
+                "code": "ODA/PLOGSK_USD"
+            },
+            {
+                "name": "Soft Logs",
+                "source": "ODA",
+                "code": "ODA/PLOGORE_USD"
+            }
+        ]
+    },
+    {
+        "commodity": "Copra",
+        "sources": [
+            {
+                "name": "Copra",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_COPRA"
+            }
+        ]
+    },
+    {
+        "commodity": "Lumber",
+        "sources": [
+            {
+                "name": "Soft Sawnwood",
+                "source": "ODA",
+                "code": "ODA/PSAWORE_USD"
+            },
+            {
+                "name": "Hard Sawnwood",
+                "source": "ODA",
+                "code": "ODA/PSAWMAL_USD"
+            },
+            {
+                "name": "Lumber Futures",
+                "source": "CME",
+                "code": "CHRIS/CME_LB1"
+            }
+        ]
+    },
+    {
+        "commodity": "Woodpulp",
+        "sources": [
+            {
+                "name": "Woodpulp",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_WOODPULP"
+            }
+        ]
+    },
+    {
+        "commodity": "Plywood",
+        "sources": [
+            {
+                "name": "Plywood",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_PLYWOOD"
+            }
+        ]
+    },
+    {
+        "commodity": "Rubber",
+        "sources": [
+            {
+                "name": "Rubber",
+                "source": "ODA",
+                "code": "ODA/PRUBB_USD"
+            }
+        ]
+    },
+    {
+        "commodity": "Cotton",
+        "sources": [
+            {
+                "name": "Cotton",
+                "source": "ODA",
+                "code": "ODA/PCOTTIND_USD"
+            },
+            {
+                "name": "Cotton No. 2 Futures",
+                "source": "ICE",
+                "code": "CHRIS/ICE_CT1"
+            }
+        ]
+    },
+    {
+        "commodity": "Fertilizers and Chemicals",
+        "sources": [
+            {
+                "name": "Urea, E. Europe, bulk",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_UREA_EE_BULK"
+            },
+            {
+                "name": "Phosphate rock Pric",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_PHOSROCK"
+            },
+            {
+                "name": "Potash (Potassium Chloride)",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_POTASH"
+            },
+            {
+                "name": "TSP",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_TSP"
+            },
+            {
+                "name": "DAP",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_DAP"
+            }
+        ]
+    },
+    {
+        "commodity": "Commodity Indexes",
+        "sources": [
+            {
+                "name": "Fertilizers Index, 2000=100",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_IFERTILIZERS"
+            },
+            {
+                "name": "Food Index, 2000=100",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_IFOOD"
+            },
+            {
+                "name": "1 Timber Index, 2000=100",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_ITIMBER"
+            },
+            {
+                "name": "Metals and minerals Index, 2000=100",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_IMETMIN"
+            },
+            {
+                "name": "Beverages Index, 2000=100",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_IBEVERAGES"
+            },
+            {
+                "name": "Energy Index, 2000=100",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_IENERGY"
+            },
+            {
+                "name": "Non-energy commodities Index, 2000=100",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_INONFUEL"
+            },
+            {
+                "name": "Fats and oils Index, 2000=100",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_IFATS_OILS"
+            },
+            {
+                "name": "Agriculture Index, 2000=100",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_IAGRICULTURE"
+            },
+            {
+                "name": "Grains Index, 2000=100",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_IGRAINS"
+            },
+            {
+                "name": "Raw materials Index, 2000=100",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_IRAW_MATERIAL"
+            },
+            {
+                "name": "2 Oth raw materials Index, 2000=100",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_IOTHERRAWMAT"
+            },
+            {
+                "name": "Other food Index, 2000=100",
+                "source": "WORLDBANK",
+                "code": "WORLDBANK/WLD_IOTHERFOOD"
+            }
+        ]
+    }
+]
