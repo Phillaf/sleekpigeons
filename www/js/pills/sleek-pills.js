@@ -71,7 +71,7 @@ class SleekPills extends HTMLElement {
         }
         a {
           text-decoration: none;
-          color: var(--dark-colof);
+          color: var(--dark-color);
           border: 1px solid var(--shade-light-color);
           border-radius: var(--border-radius);
           background-color: var(--shade-light-color);

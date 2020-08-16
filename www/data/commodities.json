@@ -1,6 +1,7 @@
 [
     {
-        "commodity": "Gold",
+        "name": "Gold",
+        "code": "gold",
         "sources": [
             {
                 "name": "Gold, London A.M. Fixing",
@@ -45,7 +46,8 @@
         ]
     },
     {
-        "commodity": "Silver",
+        "name": "Silver",
+        "code": "silver",
         "sources": [
             {
                 "name": "Silver, London fixing, USD equivalent",
@@ -70,7 +72,8 @@
         ]
     },
     {
-        "commodity": "Platinum",
+        "name": "Platinum",
+        "code": "platinum",
         "sources": [
             {
                 "name": "Platinum, Johnson Mathey London",
@@ -85,7 +88,8 @@
         ]
     },
     {
-        "commodity": "Palladium",
+        "name": "Palladium",
+        "code": "palladium",
         "sources": [
             {
                 "name": "Palladium, Johnson Mathey London",
@@ -100,7 +104,8 @@
         ]
     },
     {
-        "commodity": "Iridium",
+        "name": "Iridium",
+        "code": "iridium",
         "sources": [
             {
                 "name": "Iridium",
@@ -110,7 +115,8 @@
         ]
     },
     {
-        "commodity": "Rhodium",
+        "name": "Rhodium",
+        "code": "rhodium",
         "sources": [
             {
                 "name": "Rhodium",
@@ -120,7 +126,8 @@
         ]
     },
     {
-        "commodity": "Ruthenium",
+        "name": "Ruthenium",
+        "code": "ruthenium",
         "sources": [
             {
                 "name": "Ruthenium",
@@ -130,7 +137,8 @@
         ]
     },
     {
-        "commodity": "Aluminum",
+        "name": "Aluminum",
+        "code": "aluminum",
         "sources": [
             {
                 "name": "Aluminum, LME",
@@ -150,7 +158,8 @@
         ]
     },
     {
-        "commodity": "Cobalt",
+        "name": "Cobalt",
+        "code": "cobalt",
         "sources": [
             {
                 "name": "Cobalt, LME",
@@ -160,7 +169,8 @@
         ]
     },
     {
-        "commodity": "Copper",
+        "name": "Copper",
+        "code": "copper",
         "sources": [
             {
                 "name": "Copper, LME",
@@ -190,7 +200,8 @@
         ]
     },
     {
-        "commodity": "Lead",
+        "name": "Lead",
+        "code": "lead",
         "sources": [
             {
                 "name": "Lead, LME",
@@ -210,7 +221,8 @@
         ]
     },
     {
-        "commodity": "Molybdenum",
+        "name": "Molybdenum",
+        "code": "molybdenum",
         "sources": [
             {
                 "name": "Molybdenum, LME",
@@ -220,7 +232,8 @@
         ]
     },
     {
-        "commodity": "Nickel",
+        "name": "Nickel",
+        "code": "nickel",
         "sources": [
             {
                 "name": "Nickel, LME",
@@ -235,7 +248,8 @@
         ]
     },
     {
-        "commodity": "Steel",
+        "name": "Steel",
+        "code": "steel",
         "sources": [
             {
                 "name": "Steel Billet, LME",
@@ -260,7 +274,8 @@
         ]
     },
     {
-        "commodity": "Tin",
+        "name": "Tin",
+        "code": "tin",
         "sources": [
             {
                 "name": "Tin, LME",
@@ -275,7 +290,8 @@
         ]
     },
     {
-        "commodity": "Zinc",
+        "name": "Zinc",
+        "code": "zinc",
         "sources": [
             {
                 "name": "Zinc, LME",
@@ -295,7 +311,8 @@
         ]
     },
     {
-        "commodity": "Barley",
+        "name": "Barley",
+        "code": "barley",
         "sources": [
             {
                 "name": "Barley, Western Canada (ODA)",
@@ -310,7 +327,8 @@
         ]
     },
     {
-        "commodity": "Corn",
+        "name": "Corn",
+        "code": "corn",
         "sources": [
             {
                 "name": "Corn, Top Flight Grain Co-op",
@@ -330,7 +348,8 @@
         ]
     },
     {
-        "commodity": "Oats",
+        "name": "Oats",
+        "code": "oats",
         "sources": [
             {
                 "name": "Oats, CBOT Oats Futures",
@@ -340,7 +359,8 @@
         ]
     },
     {
-        "commodity": "Rice",
+        "name": "Rice",
+        "code": "rice",
         "sources": [
             {
                 "name": "Rice, Thailand (ODA)",
@@ -360,7 +380,8 @@
         ]
     },
     {
-        "commodity": "Soybean",
+        "name": "Soybean",
+        "code": "soybean",
         "sources": [
             {
                 "name": "Soybean, CBOT Soybean Futures",
@@ -375,7 +396,8 @@
         ]
     },
     {
-        "commodity": "Wheat",
+        "name": "Wheat",
+        "code": "wheat",
         "sources": [
             {
                 "name": "Wheat, Soybean Oil",
@@ -400,7 +422,8 @@
         ]
     },
     {
-        "commodity": "Dairy",
+        "name": "Dairy",
+        "code": "dairy",
         "sources": [
             {
                 "name": "Dairy, CME Milk Futures",
@@ -410,7 +433,8 @@
         ]
     },
     {
-        "commodity": "Cattle",
+        "name": "Cattle",
+        "code": "cattle",
         "sources": [
             {
                 "name": "Cattle, Beef (ODA)",
@@ -435,7 +459,8 @@
         ]
     },
     {
-        "commodity": "Poultry",
+        "name": "Poultry",
+        "code": "poultry",
         "sources": [
             {
                 "name": "Poulty, Chicken, Georgia (ODA)",
@@ -445,7 +470,8 @@
         ]
     },
     {
-        "commodity": "Pork",
+        "name": "Pork",
+        "code": "pork",
         "sources": [
             {
                 "name": "Pork, Pork, Chicago (ODA)",
@@ -460,7 +486,8 @@
         ]
     },
     {
-        "commodity": "Lamb",
+        "name": "Lamb",
+        "code": "lamb",
         "sources": [
             {
                 "name": "Fats, Lamb",
@@ -470,7 +497,8 @@
         ]
     },
     {
-        "commodity": "Wool",
+        "name": "Wool",
+        "code": "wool",
         "sources": [
             {
                 "name": "Wool",
@@ -480,7 +508,8 @@
         ]
     },
     {
-        "commodity": "Salmon",
+        "name": "Salmon",
+        "code": "salmon",
         "sources": [
             {
                 "name": "Salmon",
@@ -490,7 +519,8 @@
         ]
     },
     {
-        "commodity": "Shrimp",
+        "name": "Shrimp",
+        "code": "shrimp",
         "sources": [
             {
                 "name": "Shrimp",
@@ -500,7 +530,8 @@
         ]
     },
     {
-        "commodity": "Fishmeal",
+        "name": "Fishmeal",
+        "code": "fishmeal",
         "sources": [
             {
                 "name": "Fishmeal",
@@ -510,7 +541,8 @@
         ]
     },
     {
-        "commodity": "Gasoline",
+        "name": "Gasoline",
+        "code": "gasoline",
         "sources": [
             {
                 "name": "NYMEX RBOB Gasoline Futures",
@@ -565,7 +597,8 @@
         ]
     },
     {
-        "commodity": "Crude Oil",
+        "name": "Crude Oil",
+        "code": "crude-oil",
         "sources": [
             {
                 "name": "NYMEX Crude Oil Futures",
@@ -635,7 +668,8 @@
         ]
     },
     {
-        "commodity": "Natural Gas",
+        "name": "Natural Gas",
+        "code": "natural-gas",
         "sources": [
             {
                 "name": "NYMEX Natural Gas Futures",
@@ -680,7 +714,8 @@
         ]
     },
     {
-        "commodity": "Coal",
+        "name": "Coal",
+        "code": "coal",
         "sources": [
             {
                 "name": "U.S. Coals, 1949-2005",
@@ -725,7 +760,8 @@
         ]
     },
     {
-        "commodity": "Coffee",
+        "name": "Coffee",
+        "code": "coffee",
         "sources": [
             {
                 "name": "Arabica Coffee",
@@ -750,7 +786,8 @@
         ]
     },
     {
-        "commodity": "Cocoa",
+        "name": "Cocoa",
+        "code": "cocoa",
         "sources": [
             {
                 "name": "Cocoa Futures",
@@ -760,7 +797,8 @@
         ]
     },
     {
-        "commodity": "Tobacco",
+        "name": "Tobacco",
+        "code": "tobacco",
         "sources": [
             {
                 "name": "Tobacco",
@@ -770,7 +808,8 @@
         ]
     },
     {
-        "commodity": "Tea",
+        "name": "Tea",
+        "code": "tea",
         "sources": [
             {
                 "name": "Tea",
@@ -785,7 +824,8 @@
         ]
     },
     {
-        "commodity": "Sugar",
+        "name": "Sugar",
+        "code": "sugar",
         "sources": [
             {
                 "name": "US Imports Sugar",
@@ -800,7 +840,8 @@
         ]
     },
     {
-        "commodity": "Groundnuts",
+        "name": "Groundnuts",
+        "code": "groundnuts",
         "sources": [
             {
                 "name": "Groundnuts (Peanuts)",
@@ -810,7 +851,8 @@
         ]
     },
     {
-        "commodity": "Oranges",
+        "name": "Oranges",
+        "code": "oranges",
         "sources": [
             {
                 "name": "Oranges",
@@ -825,7 +867,8 @@
         ]
     },
     {
-        "commodity": "Bananas",
+        "name": "Bananas",
+        "code": "bananas",
         "sources": [
             {
                 "name": "Bananas",
@@ -840,7 +883,8 @@
         ]
     },
     {
-        "commodity": "Vegetable Oil",
+        "name": "Vegetable Oil",
+        "code": "vegetable-oil",
         "sources": [
             {
                 "name": "Rapeseed Oil",
@@ -875,7 +919,8 @@
         ]
     },
     {
-        "commodity": "Logs",
+        "name": "Logs",
+        "code": "logs",
         "sources": [
             {
                 "name": "Hard Logs",
@@ -890,7 +935,8 @@
         ]
     },
     {
-        "commodity": "Copra",
+        "name": "Copra",
+        "code": "copra",
         "sources": [
             {
                 "name": "Copra",
@@ -900,7 +946,8 @@
         ]
     },
     {
-        "commodity": "Lumber",
+        "name": "Lumber",
+        "code": "lumber",
         "sources": [
             {
                 "name": "Soft Sawnwood",
@@ -920,7 +967,8 @@
         ]
     },
     {
-        "commodity": "Woodpulp",
+        "name": "Woodpulp",
+        "code": "woodpulp",
         "sources": [
             {
                 "name": "Woodpulp",
@@ -930,7 +978,8 @@
         ]
     },
     {
-        "commodity": "Plywood",
+        "name": "Plywood",
+        "code": "plywood",
         "sources": [
             {
                 "name": "Plywood",
@@ -940,7 +989,8 @@
         ]
     },
     {
-        "commodity": "Rubber",
+        "name": "Rubber",
+        "code": "rubber",
         "sources": [
             {
                 "name": "Rubber",
@@ -950,7 +1000,8 @@
         ]
     },
     {
-        "commodity": "Cotton",
+        "name": "Cotton",
+        "code": "cotton",
         "sources": [
             {
                 "name": "Cotton",
@@ -965,7 +1016,8 @@
         ]
     },
     {
-        "commodity": "Fertilizers and Chemicals",
+        "name": "Fertilizers and Chemicals",
+        "code": "fertilizers-chemicals",
         "sources": [
             {
                 "name": "Urea, E. Europe, bulk",
@@ -995,7 +1047,8 @@
         ]
     },
     {
-        "commodity": "Commodity Indexes",
+        "name": "Commodity Indexes",
+        "code": "name-indexes",
         "sources": [
             {
                 "name": "Fertilizers Index, 2000=100",

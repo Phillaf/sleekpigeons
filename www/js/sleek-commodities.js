@@ -18,7 +18,7 @@ class SleekCommodities extends HTMLElement {
   getCommodities = async (commodities) => {
     let html = "";
     commodities.forEach(commodity => {
-      html += `<div>${commodity.commodity}</div>`;
+      html += `<a href="/commodity/${commodity.code}">${commodity.name}</a>`;
     });
     return html;
   }
@@ -34,13 +34,15 @@ style.innerHTML = `
       grid-gap: 0.3em;
       grid-template-columns: repeat(auto-fill, minmax(15em, auto));
     }
-    #commodities > div {
+    #commodities > a {
       background-color: var(--shade-light-color);
       padding: 1em;
       border-radius: var(--border-radius);
       text-align: center;
+      text-decoration: none;
+      color: var(--dark-color);
     }
-    #commodities > div:hover {
+    #commodities > a:hover {
       background-color: var(--shade-medium-color);
     }
   </style>`;

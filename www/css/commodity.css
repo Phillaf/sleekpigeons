@@ -1,0 +1,22 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-areas:
+    "heading heading heading heading heading heading heading"
+    ". body body body body body ."
+  ;
+}
+#heading {
+  grid-area: heading;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-areas:
+    ". navbar navbar navbar navbar navbar .";
+  background-color: var(--dark-color);
+}
+sleek-nav {
+  grid-area: navbar;
+}
+sleek-commodity-profile {
+  grid-area: body;
+}
