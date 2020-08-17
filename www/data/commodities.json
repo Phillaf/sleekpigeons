@@ -4,14 +4,9 @@
         "code": "gold",
         "sources": [
             {
-                "name": "Gold, London A.M. Fixing",
+                "name": "Gold Price: London Fixing",
                 "source": "LBMA",
                 "code": "LBMA/GOLD"
-            },
-            {
-                "name": "Gold, London P.M. Fixing",
-                "source": "LBMA",
-                "code": "BMA/GOLD"
             },
             {
                 "name": "Gold, World Gold Council",
@@ -32,11 +27,6 @@
                 "name": "Gold, Shanghai Gold Futures",
                 "source": "SHFE",
                 "code": "SHFE/AUV2013"
-            },
-            {
-                "name": "Gold, World Bank",
-                "source": "WORLDBANK",
-                "code": "WORLDBANK/WLD_GOLD"
             }
         ]
     },

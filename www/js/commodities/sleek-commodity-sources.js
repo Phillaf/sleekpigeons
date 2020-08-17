@@ -8,7 +8,7 @@ class SleekCommoditySources extends HTMLElement {
     this.sources.className = 'sources';
     shadow.appendChild(this.sources);
     shadow.appendChild(style.content.cloneNode(true));
-    window.addEventListener("commodity-datasource-loaded", this.load, false);
+    window.addEventListener("commodity-datasource-updated", this.load, false);
   };
 
   load = (event) => {

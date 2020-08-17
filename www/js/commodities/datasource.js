@@ -1,9 +1,15 @@
-export default class Commodities {
+export default class Datasource {
 
   constructor(datasource) {
     this.dataSource = datasource;
-    this.dispatchLoaded();
-    window.addEventListener("commodity-source-change", this.changeSource.bind(this), false);
+    this.loadSource();
+    window.addEventListener("commodity-source-change", this.loadSource.bind(this), false);
+  }
+
+  loadSource(event) {
+    const source = event ? event.detail : this.getSource();
+    this.setSourceUrl(source);
+    this.dispatchUpdated(source);
   }
 
   getCommodity() {
@@ -16,18 +22,16 @@ export default class Commodities {
     return searchParams.get('source') ?? this.getCommodity().sources[0].code;
   }
 
-  changeSource(event) {
-    const source = event.detail;
+  setSourceUrl(source) {
     let searchParams = new URLSearchParams(window.location.search);
     searchParams.set("source", source);
     const newRelativePathQuery = window.location.pathname + '?' + searchParams.toString();
     window.history.pushState(null, '', newRelativePathQuery);
-    this.dispatchLoaded();
   }
 
-  dispatchLoaded() {
+  async dispatchUpdated() {
     window.dispatchEvent(
-      new CustomEvent("commodity-datasource-loaded", {
+      new CustomEvent("commodity-datasource-updated", {
         detail: {
           "commodity": this.getCommodity(),
           "source": this.getSource(),
@@ -42,7 +46,7 @@ export default class Commodities {
 export async function build() {
   const response = await fetch(`/data/commodities.json`);
   const datasource = await response.json();
-  return new Commodities(datasource);
+  return new Datasource(datasource);
 }
 
 build();
