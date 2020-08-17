@@ -49,4 +49,3 @@ style.innerHTML = `
 
 customElements.define('sleek-commodities', SleekCommodities);
 export {SleekCommodities};
-

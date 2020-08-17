@@ -17,6 +17,6 @@ body {
 sleek-nav {
   grid-area: navbar;
 }
-sleek-commodity-profile {
+#body {
   grid-area: body;
 }

@@ -9,11 +9,6 @@
                 "code": "LBMA/GOLD"
             },
             {
-                "name": "Gold, London A.M. Fixing",
-                "source": "LBMA",
-                "code": "LBMA/GOLD"
-            },
-            {
                 "name": "Gold, London P.M. Fixing",
                 "source": "LBMA",
                 "code": "BMA/GOLD"
