@@ -5,15 +5,19 @@ export default class Api {
   }
 
   loadSource(event) {
-    //this.data = this.getData(event.detail.source);
+    this.data = this.getData(event.detail.source);
     this.meta = this.getMeta(event.detail.source);
-    this.dispatchLoaded();
+    this.dispatchMetaLoaded();
+    this.dispatchDataLoaded();
   }
 
   async getData(source) {
-    const response = await fetch(`/quandl-api/${source}/data.json`);
+    let startDate = new Date();
+    startDate.setFullYear(startDate.getFullYear() - 1);
+    startDate = startDate.toISOString().substring(0, 10);
+    const response = await fetch(`/quandl-api/${source}/data.json?start_date=${startDate}`);
     const data = await response.json();
-    return data['dataset'];
+    return data['dataset_data']['data'];
   }
 
   async getMeta(source) {
@@ -22,11 +26,21 @@ export default class Api {
     return data['dataset'];
   }
 
-  async dispatchLoaded() {
+  async dispatchDataLoaded() {
     window.dispatchEvent(
       new CustomEvent("commodity-data-loaded", {
         detail: {
-          //"data": await this.data,
+          "data": await this.data,
+        },
+        bubbles: true,
+      })
+    );
+  }
+
+  async dispatchMetaLoaded() {
+    window.dispatchEvent(
+      new CustomEvent("commodity-meta-loaded", {
+        detail: {
           "meta": await this.meta,
         },
         bubbles: true,

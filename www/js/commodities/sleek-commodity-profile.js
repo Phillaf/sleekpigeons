@@ -9,7 +9,7 @@ class SleekCommodityProfile extends HTMLElement {
     shadow.appendChild(this.description);
     shadow.appendChild(style.content.cloneNode(true));
     window.addEventListener("commodity-datasource-updated", this.update, false);
-    window.addEventListener("commodity-data-loaded", this.load, false);
+    window.addEventListener("commodity-meta-loaded", this.load, false);
   };
 
   update = (event) => {

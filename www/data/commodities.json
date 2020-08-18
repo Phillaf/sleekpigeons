@@ -22,11 +22,6 @@
                 "name": "Gold, COMEX Gold Futures",
                 "source": "COMEX",
                 "code": "CHRIS/CME_GC1"
-            },
-            {
-                "name": "Gold, Shanghai Gold Futures",
-                "source": "SHFE",
-                "code": "SHFE/AUV2013"
             }
         ]
     },

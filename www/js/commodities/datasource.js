@@ -40,7 +40,6 @@ export default class Datasource {
       })
     );
   }
-
 }
 
 export async function build() {

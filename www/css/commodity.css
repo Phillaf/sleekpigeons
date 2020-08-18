@@ -20,3 +20,8 @@ sleek-nav {
 #body {
   grid-area: body;
 }
+sleek-chart {
+  display:block;
+  max-height: 800px;
+  height: 75vh;
+}

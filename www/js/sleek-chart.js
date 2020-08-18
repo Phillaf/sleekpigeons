@@ -8,7 +8,6 @@ class SleekChart extends HTMLElement {
     this.chart.setAttribute("id", "container");
     this.chart.setAttribute("class", "chart");
 
-    console.log(Highstock);
     shadow.appendChild(this.chart);
     shadow.appendChild(style.content.cloneNode(true));
   };
