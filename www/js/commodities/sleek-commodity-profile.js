@@ -21,7 +21,6 @@ class SleekCommodityProfile extends HTMLElement {
   }
 
   load = (event) => {
-    console.log(event.detail);
     const description = event.detail.meta.description;
     this.description.innerHTML = `<p>${description}</p>`;
   }

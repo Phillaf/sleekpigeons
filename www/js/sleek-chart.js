@@ -1,3 +1,5 @@
+import Highstock from 'https://cdnjs.cloudflare.com/ajax/libs/highcharts/8.0.0/es-modules/masters/highstock.src.js';
+
 class SleekChart extends HTMLElement {
   constructor() {
     super();
@@ -6,6 +8,7 @@ class SleekChart extends HTMLElement {
     this.chart.setAttribute("id", "container");
     this.chart.setAttribute("class", "chart");
 
+    console.log(Highstock);
     shadow.appendChild(this.chart);
     shadow.appendChild(style.content.cloneNode(true));
   };
@@ -34,7 +37,7 @@ class SleekChart extends HTMLElement {
           ]);
       }
 
-      Highcharts.stockChart({
+      Highstock.stockChart({
           chart: {
             renderTo: this.chart,
           },

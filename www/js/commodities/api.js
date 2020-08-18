@@ -5,7 +5,7 @@ export default class Api {
   }
 
   loadSource(event) {
-    this.data = this.getData(event.detail.source);
+    //this.data = this.getData(event.detail.source);
     this.meta = this.getMeta(event.detail.source);
     this.dispatchLoaded();
   }
@@ -17,7 +17,7 @@ export default class Api {
   }
 
   async getMeta(source) {
-    const response = await fetch(`/quandl-api/${source}.json`);
+    const response = await fetch(`/quandl-api/${source}/metadata.json`);
     const data = await response.json();
     return data['dataset'];
   }
@@ -26,7 +26,7 @@ export default class Api {
     window.dispatchEvent(
       new CustomEvent("commodity-data-loaded", {
         detail: {
-          "data": await this.data,
+          //"data": await this.data,
           "meta": await this.meta,
         },
         bubbles: true,
