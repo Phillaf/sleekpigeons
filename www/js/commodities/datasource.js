@@ -22,6 +22,12 @@ export default class Datasource {
     return searchParams.get('source') ?? this.getCommodity().sources[0].code;
   }
 
+  getSourceDetails() {
+    const commodity = this.getCommodity();
+    const sourceCode = this.getSource();
+    return commodity.sources.find(source => source.code === sourceCode);
+  }
+
   setSourceUrl(source) {
     let searchParams = new URLSearchParams(window.location.search);
     searchParams.set("source", source);
@@ -35,6 +41,7 @@ export default class Datasource {
         detail: {
           "commodity": this.getCommodity(),
           "source": this.getSource(),
+          "sourceDetails": this.getSourceDetails(),
         },
         bubbles: true,
       })

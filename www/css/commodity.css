@@ -20,8 +20,7 @@ sleek-nav {
 #body {
   grid-area: body;
 }
-sleek-chart {
+sleek-commodity-chart {
   display:block;
-  max-height: 800px;
-  height: 75vh;
+  height: 400px;
 }

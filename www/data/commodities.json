@@ -6,7 +6,8 @@
             {
                 "name": "Gold Price: London Fixing",
                 "source": "LBMA",
-                "code": "LBMA/GOLD"
+                "code": "LBMA/GOLD",
+                "chart": "lbma-gold"
             },
             {
                 "name": "Gold, World Gold Council",

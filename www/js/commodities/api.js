@@ -7,8 +7,8 @@ export default class Api {
   loadSource(event) {
     this.data = this.getData(event.detail.source);
     this.meta = this.getMeta(event.detail.source);
-    this.dispatchMetaLoaded();
-    this.dispatchDataLoaded();
+    this.sourceDetails = event.detail.sourceDetails;
+    this.dispatchLoaded();
   }
 
   async getData(source) {
@@ -26,22 +26,13 @@ export default class Api {
     return data['dataset'];
   }
 
-  async dispatchDataLoaded() {
+  async dispatchLoaded() {
     window.dispatchEvent(
       new CustomEvent("commodity-data-loaded", {
         detail: {
           "data": await this.data,
-        },
-        bubbles: true,
-      })
-    );
-  }
-
-  async dispatchMetaLoaded() {
-    window.dispatchEvent(
-      new CustomEvent("commodity-meta-loaded", {
-        detail: {
           "meta": await this.meta,
+          "sourceDetails": this.sourceDetails,
         },
         bubbles: true,
       })
