@@ -9,9 +9,9 @@ export default function (div, data) {
   data.forEach(element => {
     const date = new Date(element[0] + 'Z');
     const epoch = date.getTime();
-    usdData.push([epoch, element[1]]);
-    gbpData.push([epoch, element[3]]);
-    euroData.push([epoch, element[5]]);
+    usdData.unshift([epoch, element[1]]);
+    gbpData.unshift([epoch, element[3]]);
+    euroData.unshift([epoch, element[5]]);
   });
 
   var seriesOptions = [
