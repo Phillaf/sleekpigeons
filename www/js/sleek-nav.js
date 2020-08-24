@@ -2,8 +2,8 @@ class SleekNav extends HTMLElement {
   constructor() {
     super();
     const shadow = this.attachShadow({ mode: 'open' });
-    shadow.appendChild(nav.content.cloneNode(true));
     shadow.appendChild(style.content.cloneNode(true));
+    shadow.appendChild(nav.content.cloneNode(true));
   };
 }
 
@@ -16,11 +16,13 @@ nav.innerHTML = `
       <li><a href="/commodities">commodities</a></li>
       <li><a href="/logs">logs</a></li>
       <li><a href="http://status.sleekpigeons.com/d/xdlNPjXmk/nginx">status</a></li>
+      <li><a href="https://github.com/Phillaf/sleekpigeons"><i class="fab fa-github"></i></a></li>
     </ul>
   </nav>`;
 
 const style = document.createElement('template');
 style.innerHTML = `
+  <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.14.0/css/all.css">
   <style>
     nav {
       background-color: var(--dark-color);
