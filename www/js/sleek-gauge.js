@@ -12,6 +12,7 @@ class SleekGauge extends HTMLElement {
   async connectedCallback() {
     const Module = await import(this.getAttribute('api'))
     const data = await Module.getData();
+    if (data === undefined) return;
     this.stylesheet.innerHTML = this.createStyle(data);
     this.gauge.innerHTML = this.createGauge(data);
   }

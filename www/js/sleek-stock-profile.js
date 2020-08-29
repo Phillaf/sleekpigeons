@@ -11,6 +11,8 @@ class SleekStockProfile extends HTMLElement {
 
   async connectedCallback() {
     const data = await this.getProfile();
+    if (Object.keys(data).length === 0) return;
+    console.log(Object.keys(data));
     this.profile.innerHTML = await this.createProfile(data);
   }
 
