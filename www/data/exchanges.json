@@ -1,0 +1,445 @@
+[
+    {
+        "name": "AS",
+        "code": "NYSE EURONEXT - EURONEXT AMSTERDAM",
+        "mic": "XAMS",
+        "timezone": "Europe/Amsterdam",
+        "source": "https://www.tradinghours.com/exchanges/euronext"
+    },
+    {
+        "name": "AT",
+        "code": "ATHENS EXCHANGE S.A. CASH MARKET",
+        "mic": "ASEX",
+        "timezone": "Europe/Athens",
+        "source": "https://www.tradinghours.com/exchanges/ase-athens"
+    },
+    {
+        "name": "AX",
+        "code": "ASX - ALL MARKETS",
+        "mic": "XASX",
+        "timezone": "Australia/Sydney",
+        "source": "https://www.tradinghours.com/exchanges/asx"
+    },
+    {
+        "name": "BA",
+        "code": "BOLSA DE COMERCIO DE BUENOS AIRES",
+        "mic": "XBUE",
+        "timezone": "America/Argentina/Buenos_Aires",
+        "source": "https://www.tradinghours.com/exchanges/bcba"
+    },
+    {
+        "name": "BC",
+        "code": "BOLSA DE VALORES DE COLOMBIA",
+        "mic": "XBOG    America/Cuiaba",
+        "timezone": "09:15-16:00",
+        "source": ""
+    },
+    {
+        "name": "BD",
+        "code": "BUDAPEST STOCK EXCHANGE",
+        "mic": "XBUD",
+        "timezone": "Europe/Budapest",
+        "source": "https://www.tradinghours.com/exchanges/bse-budapest"
+    },
+    {
+        "name": "BE",
+        "code": "BOERSE BERLIN",
+        "mic": "XBER",
+        "timezone": "Europe/Berlin",
+        "source": "https://www.tradinghours.com/exchanges/xber"
+    },
+    {
+        "name": "BK",
+        "code": "STOCK EXCHANGE OF THAILAND",
+        "mic": "XBKK",
+        "timezone": "Asia/Bangkok",
+        "source": "https://www.tradinghours.com/exchanges/set"
+    },
+    {
+        "name": "BO",
+        "code": "BSE LTD",
+        "mic": "XBOM",
+        "timezone": "Asia/Kolkata",
+        "source": "https://www.tradinghours.com/exchanges/bse-bombay"
+    },
+    {
+        "name": "BR",
+        "code": "NYSE EURONEXT - EURONEXT BRUSSELS",
+        "mic": "XBRU",
+        "timezone": "Europe/Brussels",
+        "source": "https://www.tradinghours.com/exchanges/euronext-brussels"
+    },
+    {
+        "name": "CN",
+        "code": "CANADIAN NATIONAL STOCK EXCHANGE",
+        "mic": "XCNQ",
+        "timezone": "America/New_York",
+        "source": "https://www.tradinghours.com/exchanges/cnsx"
+    },
+    {
+        "name": "CO",
+        "code": "OMX NORDIC EXCHANGE COPENHAGEN A/S",
+        "mic": "XCSE",
+        "timezone": "Europe/Copenhagen",
+        "source": "https://www.tradinghours.com/exchanges/omxc-copenhagen"
+    },
+    {
+        "name": "CR",
+        "code": "CARACAS STOCK EXCHANGE",
+        "mic": "BVCA",
+        "timezone": "America/Caracas",
+        "source": "https://www.tradinghours.com/exchanges/bvcc"
+    },
+    {
+        "name": "DB",
+        "code": "DUBAI FINANCIAL MARKET",
+        "mic": "XDFM",
+        "timezone": "Asia/Dubai",
+        "source": "https://www.tradinghours.com/exchanges/dfm"
+    },
+    {
+        "name": "DE",
+        "code": "XETRA",
+        "mic": "XETR",
+        "timezone": "Europe/Berlin",
+        "source": "https://www.tradinghours.com/exchanges/xetr"
+    },
+    
+    {
+        "name": "DU",
+        "code": "BOERSE DUESSELDORF",
+        "mic": "XDUS",
+        "timezone": "Europe/Berlin",
+        "source": "https://www.tradinghours.com/exchanges/xdus"
+    },
+    {
+        "name": "F",
+        "code": "DEUTSCHE BOERSE AG",
+        "mic": "XFRA",
+        "timezone": "Europe/Berlin",
+        "source": "https://www.tradinghours.com/exchanges/fsx"
+    },
+    {
+        "name": "HE",
+        "code": "NASDAQ OMX HELSINKI LTD.",
+        "mic": "XHEL",
+        "timezone": "Europe/Helsinki",
+        "source": "https://www.tradinghours.com/exchanges/omxh-helsinki"
+    },
+    {
+        "name": "HK",
+        "code": "HONG KONG EXCHANGES AND CLEARING LTD",
+        "mic": "XHKG",
+        "timezone": "Asia/Hong_Kong",
+        "source": "https://www.tradinghours.com/exchanges/hkex"
+    },
+    {
+        "name": "HM",
+        "code": "HANSEATISCHE WERTPAPIERBOERSE HAMBURG",
+        "mic": "XHAM",
+        "timezone": "Europe/Berlin",
+        "source": "https://www.tradinghours.com/exchanges/xham"
+    },
+    {
+        "name": "IC",
+        "code": "NASDAQ OMX ICELAND",
+        "mic": "XICE",
+        "timezone": "Atlantic/Reykjavik",
+        "source": "https://www.tradinghours.com/exchanges/xice"
+    },
+    {
+        "name": "IR",
+        "code": "IRISH STOCK EXCHANGE - ALL MARKET",
+        "mic": "XDUB",
+        "timezone": "Europe/Dublin",
+        "source": "https://www.tradinghours.com/exchanges/ise"
+    },
+    
+    {
+        "name": "IS",
+        "code": "BORSA ISTANBUL",
+        "mic": "XIST",
+        "timezone": "Europe/Istanbul",
+        "source": "https://www.tradinghours.com/exchanges/bist"
+    },
+    {
+        "name": "JK",
+        "code": "INDONESIA STOCK EXCHANGE",
+        "mic": "XIDX",
+        "timezone": "Asia/Jakarta",
+        "source": "https://www.tradinghours.com/exchanges/idx"
+    },
+    {
+        "name": "JO",
+        "code": "JOHANNESBURG STOCK EXCHANGE",
+        "mic": "XJSE",
+        "timezone": "Africa/Johannesburg",
+        "source": "https://www.tradinghours.com/exchanges/jse"
+    },
+    {
+        "name": "KL",
+        "code": "BURSA MALAYSIA",
+        "mic": "XKLS",
+        "timezone": "Asia/Kuala_Lumpur",
+        "source": "https://www.tradinghours.com/exchanges/myx"
+    },
+    {
+        "name": "KQ",
+        "code": "KOREA EXCHANGE (KOSDAQ)",
+        "mic": "XKOS",
+        "timezone": "Asia/Seoul",
+        "source": "https://www.tradinghours.com/exchanges/kosdaq"
+    },
+    {
+        "name": "KS",
+        "code": "KOREA EXCHANGE (STOCK MARKET)",
+        "mic": "XKRX",
+        "timezone": "Asia/Seoul",
+        "source": "https://www.tradinghours.com/exchanges/krx"
+    },
+    {
+        "name": "L",
+        "code": "LONDON STOCK EXCHANGE",
+        "mic": "XLON",
+        "timezone": "Europe/London",
+        "source": "https://www.tradinghours.com/exchanges/lse"
+    },
+    {
+        "name": "LS",
+        "code": "NYSE EURONEXT - EURONEXT LISBON",
+        "mic": "XLIS",
+        "timezone": "Europe/Lisbon",
+        "source": "https://www.tradinghours.com/exchanges/euronext-lisbon"
+    },
+    {
+        "name": "MC",
+        "code": "BOLSA DE MADRID",
+        "mic": "XMAD",
+        "timezone": "Europe/Madrid",
+        "source": "https://www.tradinghours.com/exchanges/bme"
+    },
+    {
+        "name": "ME",
+        "code": "MOSCOW EXCHANGE",
+        "mic": "MISX",
+        "timezone": "Europe/Moscow",
+        "source": "https://www.tradinghours.com/exchanges/moex"
+    },
+    {
+        "name": "MI",
+        "code": "Italian Stock Exchange",
+        "mic": "XMIL",
+        "timezone": "Europe/Rome",
+        "source": "https://www.tradinghours.com/exchanges/mta"
+    },
+    {
+        "name": "MU",
+        "code": "BOERSE MUENCHEN",
+        "mic": "XMUN",
+        "timezone": "Europe/Berlin",
+        "source": "https://www.tradinghours.com/exchanges/xmun"
+    },
+    {
+        "name": "MX",
+        "code": "BOLSA MEXICANA DE VALORES (MEXICAN STOCK EXCHANGE)",
+        "mic": "XMEX",
+        "timezone": "America/Mexico_City",
+        "source": "https://www.tradinghours.com/exchanges/bmv"
+    },
+    {
+        "name": "NE",
+        "code": "AEQUITAS NEO EXCHANGE",
+        "mic": "NEOE",
+        "timezone": "America/Toronto",
+        "source": "https://www.tradinghours.com/exchanges/neo"
+    },
+    {
+        "name": "NS",
+        "code": "NATIONAL STOCK EXCHANGE OF INDIA",
+        "mic": "XNSE",
+        "timezone": "Asia/Kolkata",
+        "source": "https://www.tradinghours.com/exchanges/nse-india"
+    },
+    {
+        "name": "NZ",
+        "code": "NEW ZEALAND EXCHANGE LTD",
+        "mic": "XNZE",
+        "timezone": "Pacific/Auckland",
+        "source": "https://www.tradinghours.com/exchanges/nzx"
+    },
+    {
+        "name": "OL",
+        "code": "OSLO BORS ASA",
+        "mic": "XOSL",
+        "timezone": "Europe/Oslo",
+        "source": "https://www.tradinghours.com/exchanges/ose"
+    },
+    {
+        "name": "PA",
+        "code": "NYSE EURONEXT - MARCHE LIBRE PARIS",
+        "mic": "XPAR",
+        "timezone": "Europe/Paris",
+        "source": "https://www.tradinghours.com/exchanges/euronext-paris"
+    },
+    {
+        "name": "PR",
+        "code": "PRAGUE STOCK EXCHANGE",
+        "mic": "XPRA",
+        "timezone": "Europe/Prague",
+        "source": "https://www.tradinghours.com/exchanges/xpra"
+    },
+    {
+        "name": "QA",
+        "code": "QATAR EXCHANGE",
+        "mic": "DSMD",
+        "timezone": "Asia/Qatar",
+        "source": "https://www.tradinghours.com/exchanges/qe"
+    },
+    {
+        "name": "RG",
+        "code": "NASDAQ OMX RIGA",
+        "mic": "XRIS",
+        "timezone": "Europe/Riga",
+        "source": "https://www.tradinghours.com/exchanges/omxr-riga"
+    },
+    {
+        "name": "SA",
+        "code": "Brazil Bolsa - Sao Paolo",
+        "mic": "BVMF",
+        "timezone": "America/Sao_Paulo",
+        "source": "https://www.tradinghours.com/exchanges/bovespa"
+    },
+    {
+        "name": "SG",
+        "code": "BOERSE STUTTGART",
+        "mic": "XSTU",
+        "timezone": "Asia/Amman",
+        "source": "https://www.tradinghours.com/exchanges/xstu"
+    },
+    {
+        "name": "SI",
+        "code": "SINGAPORE EXCHANGE",
+        "mic": "XSES",
+        "timezone": "Asia/Singapore",
+        "source": "https://www.tradinghours.com/exchanges/sgx"
+    },
+    {
+        "name": "SN",
+        "code": "SANTIAGO STOCK EXCHANGE",
+        "mic": "XSGO",
+        "timezone": "America/Santiago",
+        "source": "https://www.tradinghours.com/exchanges/bvs"
+    },
+    {
+        "name": "SR",
+        "code": "SAUDI STOCK EXCHANGE",
+        "mic": "XSAU",
+        "timezone": "Asia/Riyadh",
+        "source": "https://www.tradinghours.com/exchanges/tadawul"
+    },
+    {
+        "name": "SS",
+        "code": "SHANGHAI STOCK EXCHANGE",
+        "mic": "XSHG",
+        "timezone": "Asia/Brunei",
+        "source": "https://www.tradinghours.com/exchanges/sse"
+    },
+    {
+        "name": "ST",
+        "code": "NASDAQ OMX NORDIC",
+        "mic": "XNGM",
+        "timezone": "Europe/Stockholm",
+        "source": "https://www.tradinghours.com/exchanges/xngm"
+    },
+    {
+        "name": "SW",
+        "code": "SWISS EXCHANGE",
+        "mic": "XSWX",
+        "timezone": "Europe/Zurich",
+        "source": "https://www.tradinghours.com/exchanges/six"
+    },
+    {
+        "name": "SZ",
+        "code": "SHENZHEN STOCK EXCHANGE",
+        "mic": "XSHE",
+        "timezone": "Asia/Shanghai",
+        "source": "https://www.tradinghours.com/exchanges/szse"
+    },
+    {
+        "name": "T",
+        "code": "TOKYO STOCK EXCHANGE-TOKYO PRO MARKET",
+        "mic": "XJPX",
+        "timezone": "Asia/Tokyo",
+        "source": "https://www.tradinghours.com/exchanges/jpx"
+    },
+    {
+        "name": "TA",
+        "code": "TEL AVIV STOCK EXCHANGE",
+        "mic": "XTAE",
+        "timezone": "Asia/Jerusalem",
+        "source": "https://www.tradinghours.com/exchanges/tase"
+    },
+    {
+        "name": "TL",
+        "code": "NASDAQ OMX TALLINN",
+        "mic": "XTAL",
+        "timezone": "Europe/Tallinn",
+        "source": "https://www.tradinghours.com/exchanges/omxt-tallinn"
+    },
+    {
+        "name": "TO",
+        "code": "TORONTO STOCK EXCHANGE",
+        "mic": "XTSE",
+        "timezone": "America/Toronto",
+        "source": "https://www.tradinghours.com/exchanges/tsx"
+    },
+    {
+        "name": "TW",
+        "code": "TAIWAN STOCK EXCHANGE",
+        "mic": "XTAI",
+        "timezone": "Asia/Taipei",
+        "source": "https://www.tradinghours.com/exchanges/twse"
+    },
+    {
+        "name": "US",
+        "code": "US exchanges (NYSE, Nasdaq)",
+        "mic": "XASE,XNAS",
+        "timezone": "America/New_York",
+        "source": "https://www.tradinghours.com/exchanges/nyse"
+    },
+    {
+        "name": "V",
+        "code": "TSX VENTURE EXCHANGE - NEX",
+        "mic": "XTSX",
+        "timezone": "America/Toronto",
+        "source": "https://www.tradinghours.com/exchanges/xtsx"
+    },
+    {
+        "name": "VI",
+        "code": "Vienna Stock Exchange",
+        "mic": "XWBO",
+        "timezone": "Europe/Vienna",
+        "source": "https://www.tradinghours.com/exchanges/vse"
+    },
+    {
+        "name": "VN",
+        "code": "Vietnam exchanges including HOSE, HNX and UPCOM",
+        "mic": "HSTC, XSTC",
+        "timezone": "Asia/Bangkok",
+        "source": "https://www.tradinghours.com/exchanges/hose"
+    },
+    {
+        "name": "VS",
+        "code": "NASDAQ OMX VILNIUS",
+        "mic": "XLIT",
+        "timezone": "Europe/Vilnius",
+        "source": "https://www.tradinghours.com/exchanges/omxv-vilnius"
+    },
+    {
+        "name": "WA",
+        "code": "WARSAW STOCK EXCHANGE/EQUITIES/MAIN MARKET",
+        "mic": "XWAR",
+        "timezone": "Europe/Warsaw",
+        "source": "https://www.tradinghours.com/exchanges/gpw"
+    }
+]
